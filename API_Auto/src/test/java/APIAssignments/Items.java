@@ -3,6 +3,7 @@ package APIAssignments;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -17,23 +18,12 @@ import static io.restassured.RestAssured.*;
 public class Items {
 
     private static String url;
-    private String productId;
-    private String productName;
-    private String productPrice;
-    private String productBrand;
 
     public Items() {
         url = ReusableMethod.getUrl();
     }
 
-    public Items(String productId, String productName, String productPrice, String productBrand) {
-        this.productId = productId;
-        this.productName = productName;
-        this.productPrice = productPrice;
-        this.productBrand = productBrand;
-    }
-
-    private static final Logger log = Logger.getLogger("Product.class");
+    private static final Logger log = Logger.getLogger("Items.class");
 
     @BeforeTest
     public void getLoggerDisplay() {
@@ -43,7 +33,6 @@ public class Items {
     @Test(priority = 1)
     public void checkStatusCode() {
         {
-            baseURI = ReusableMethod.getUrl();
             Response response = RestAssured.get(ReusableMethod.getUrl()).then().extract().response();
             Assert.assertEquals(response.getStatusCode(), 200);
             log.info("Status code is " + response.getStatusCode());
@@ -58,32 +47,47 @@ public class Items {
 
     @Test(priority = 3)
     public void checkContent() {
+        ReusableMethod reusableMethod = new ReusableMethod();
         Response response = RestAssured.get(url).then().extract().response();
-        JsonPath jsonObject = new JsonPath(response.asString());
-        List<Items> productList = jsonObject.getList("products");
-        List<Items> mockData = new ArrayList<>();
-        Items productLists = new Items("1", "Blue Top", "Rs. 500", "Polo");
-        mockData.add(productLists);
-        productLists = new Items("2", "Men Tshirt", "Rs. 400", "H&M");
-        for (int count = 0; count < productList.size(); count++) {
-            mockData.add(productLists);
-            String id = jsonObject.getString("products[" + count + "].id");
-            String name = jsonObject.getString("products[" + count + "].name");
-            String price = jsonObject.getString("products[" + count + "].price");
-            String brand = jsonObject.getString("products[" + count + "].brand");
-            mockData.forEach(mockProduct -> {
-                if (name.equals(mockProduct.productName)) {
-                    log.info(mockProduct.productId);
-                    log.info(mockProduct.productName);
-                    log.info(mockProduct.productBrand);
-                    log.info(mockProduct.productPrice);
-                    Assert.assertEquals(mockProduct.productId, id);
-                    Assert.assertEquals(mockProduct.productName, name);
-                    Assert.assertEquals(mockProduct.productPrice, price);
-                    Assert.assertEquals(mockProduct.productBrand, brand);
+        JsonPath jsonObject = new JsonPath(response.asString());//response convert json into string
+        List<Product> productsArray = jsonObject.get("products");
+        List<Product> getProductData = new ArrayList<>();
+        var productID = reusableMethod.productId;
+        var productName = reusableMethod.productName;
+        var productPrice = reusableMethod.price;
+        var productBand = reusableMethod.brand;
+
+        Product objectProduct = new Product();
+        objectProduct.setProductId(String.valueOf(productID));
+        objectProduct.setProductName(productName);
+        objectProduct.setProductPrice(productPrice);
+        objectProduct.setProductBrand(productBand);
+        objectProduct.getProductId();
+        log.info(objectProduct.getProductId());
+        log.info(objectProduct.getProductName());
+        log.info(objectProduct.getProductBrand());
+        log.info(objectProduct.getProductPrice());
+
+        getProductData.add(objectProduct);
+        for (int index = 0; index < productsArray.size(); index++) {
+            String id = jsonObject.getString("products[" + index + "].id");
+            String name = jsonObject.getString("products[" + index + "].name");
+            String price = jsonObject.getString("products[" + index + "].price");
+            String brand = jsonObject.getString("products[" + index + "].brand");
+            getProductData.forEach(displayList -> {
+                if (name.equals(displayList.productName)) {
+                    log.info(displayList.productId);
+                    log.info(displayList.productName);
+                    log.info(displayList.productBrand);
+                    log.info(displayList.productPrice);
+                    Assert.assertEquals(displayList.productId, id);
+                    Assert.assertEquals(displayList.productName, name);
+                    Assert.assertEquals(displayList.productPrice, price);
+                    Assert.assertEquals(displayList.productBrand, brand);
                 }
             });
         }
+
     }
 
     @Test(priority = 4)

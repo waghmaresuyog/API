@@ -1,0 +1,375 @@
+"C:\Program Files\Java\jdk-17.0.4.1\bin\java.exe" -ea -Didea.test.cyclic.buffer.size=1048576 "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar=65346:C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\lib\idea_rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.3.3\plugins\testng\lib\testng-rt.jar;C:\Users\suyogw\Desktop\API Auto\API_Auto\target\test-classes;C:\Users\suyogw\Desktop\API Auto\API_Auto\target\classes;C:\Users\suyogw\.m2\repository\io\rest-assured\rest-assured\4.5.1\rest-assured-4.5.1.jar;C:\Users\suyogw\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\suyogw\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\suyogw\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\suyogw\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\suyogw\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\suyogw\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\suyogw\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\suyogw\.m2\repository\org\hamcrest\hamcrest\2.1\hamcrest-2.1.jar;C:\Users\suyogw\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\suyogw\.m2\repository\io\rest-assured\json-path\4.5.1\json-path-4.5.1.jar;C:\Users\suyogw\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\suyogw\.m2\repository\io\rest-assured\rest-assured-common\4.5.1\rest-assured-common-4.5.1.jar;C:\Users\suyogw\.m2\repository\io\rest-assured\xml-path\4.5.1\xml-path-4.5.1.jar;C:\Users\suyogw\.m2\repository\org\apache\commons\commons-lang3\3.11\commons-lang3-3.11.jar;C:\Users\suyogw\.m2\repository\org\testng\testng\7.6.1\testng-7.6.1.jar;C:\Users\suyogw\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\suyogw\.m2\repository\org\slf4j\slf4j-api\1.7.36\slf4j-api-1.7.36.jar;C:\Users\suyogw\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\suyogw\.m2\repository\org\webjars\jquery\3.6.0\jquery-3.6.0.jar;C:\Users\suyogw\.m2\repository\log4j\log4j\1.2.12\log4j-1.2.12.jar;C:\Users\suyogw\.m2\repository\org\json\json\20230227\json-20230227.jar" com.intellij.rt.testng.RemoteTestNGStarter -usedefaultlisteners false -socket65345 @w@C:\Users\suyogw\AppData\Local\Temp\idea_working_dirs_testng.tmp -temp C:\Users\suyogw\AppData\Local\Temp\idea_testng.tmp
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+05-19-2023 14:51:06 BasicClientConnectionManager.java DEBUG [main] conn.BasicClientConnectionManager 161 - Get connection for route {s}->https://automationexercise.com:443
+05-19-2023 14:51:06 DefaultClientConnectionOperator.java DEBUG [main] conn.DefaultClientConnectionOperator 177 - Connecting to automationexercise.com:443
+05-19-2023 14:51:07 RequestAddCookies.java DEBUG [main] protocol.RequestAddCookies 123 - CookieSpec selected: ignoreCookies
+05-19-2023 14:51:07 RequestAuthCache.java DEBUG [main] protocol.RequestAuthCache 77 - Auth cache not set in the context
+05-19-2023 14:51:07 RequestTargetAuthentication.java DEBUG [main] protocol.RequestTargetAuthentication 80 - Target auth state: UNCHALLENGED
+05-19-2023 14:51:07 RequestProxyAuthentication.java DEBUG [main] protocol.RequestProxyAuthentication 89 - Proxy auth state: UNCHALLENGED
+05-19-2023 14:51:07 DefaultRequestDirector.java DEBUG [main] client.DefaultHttpClient 677 - Attempt 1 to execute request
+05-19-2023 14:51:07 DefaultClientConnection.java DEBUG [main] conn.DefaultClientConnection 274 - Sending request: GET /api/productsList HTTP/1.1
+05-19-2023 14:51:07 Wire.java DEBUG [main] http.wire 73 -  >> "GET /api/productsList HTTP/1.1[\r][\n]"
+05-19-2023 14:51:07 Wire.java DEBUG [main] http.wire 73 -  >> "Accept: */*[\r][\n]"
+05-19-2023 14:51:07 Wire.java DEBUG [main] http.wire 73 -  >> "Host: automationexercise.com[\r][\n]"
+05-19-2023 14:51:07 Wire.java DEBUG [main] http.wire 73 -  >> "Connection: Keep-Alive[\r][\n]"
+05-19-2023 14:51:07 Wire.java DEBUG [main] http.wire 73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)[\r][\n]"
+05-19-2023 14:51:07 Wire.java DEBUG [main] http.wire 73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05-19-2023 14:51:07 Wire.java DEBUG [main] http.wire 73 -  >> "[\r][\n]"
+05-19-2023 14:51:07 DefaultClientConnection.java DEBUG [main] http.headers 278 - >> GET /api/productsList HTTP/1.1
+05-19-2023 14:51:07 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Accept: */*
+05-19-2023 14:51:07 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Host: automationexercise.com
+05-19-2023 14:51:07 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Connection: Keep-Alive
+05-19-2023 14:51:07 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+05-19-2023 14:51:07 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Accept-Encoding: gzip,deflate
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "HTTP/1.1 200 OK[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "Date: Fri, 19 May 2023 09:21:08 GMT[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "Content-Type: text/html; charset=utf-8[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "Transfer-Encoding: chunked[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "Connection: keep-alive[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "vary: Accept,Cookie,Accept-Encoding[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "referrer-policy: same-origin[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "x-frame-options: DENY[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "x-content-type-options: nosniff[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "allow: OPTIONS, DELETE, PUT, POST, GET[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "x-powered-by: Phusion Passenger 6.0.7[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "status: 200 OK[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0omQ3HFFKW%2Fj2ARdTXJcLMI6viQuc0ceAGqjVkle4D9FZcm2kYuieqISkt9gNUqzEElzDJDubSEHmxW%2BCo%2FIjtFvq%2BWGc3p1CKF9T4gWArtHxEpzNnUx53i0qN1vkm57hzZ2BQWMeMyp"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "Server: cloudflare[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "CF-RAY: 7c9b44944aa887f3-SIN[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "Content-Encoding: gzip[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] conn.DefaultClientConnection 259 - Receiving response: HTTP/1.1 200 OK
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 262 - << HTTP/1.1 200 OK
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Date: Fri, 19 May 2023 09:21:08 GMT
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Content-Type: text/html; charset=utf-8
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Transfer-Encoding: chunked
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Connection: keep-alive
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << vary: Accept,Cookie,Accept-Encoding
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << referrer-policy: same-origin
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-frame-options: DENY
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-content-type-options: nosniff
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << allow: OPTIONS, DELETE, PUT, POST, GET
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-powered-by: Phusion Passenger 6.0.7
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << status: 200 OK
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << CF-Cache-Status: DYNAMIC
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0omQ3HFFKW%2Fj2ARdTXJcLMI6viQuc0ceAGqjVkle4D9FZcm2kYuieqISkt9gNUqzEElzDJDubSEHmxW%2BCo%2FIjtFvq%2BWGc3p1CKF9T4gWArtHxEpzNnUx53i0qN1vkm57hzZ2BQWMeMyp"}],"group":"cf-nel","max_age":604800}
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Server: cloudflare
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << CF-RAY: 7c9b44944aa887f3-SIN
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Content-Encoding: gzip
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 265 - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+05-19-2023 14:51:08 DefaultRequestDirector.java DEBUG [main] client.DefaultHttpClient 504 - Connection can be kept alive indefinitely
+05-19-2023 14:51:08 HTTPBuilder.java DEBUG [main] internal.RequestSpecificationImpl$RestAssuredHttpBuilder 547 - Parsing response as: text/html; charset=utf-8
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "3f2[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xc4][0x98]Ks[0xe2]8[0x14][0x85][0xff][0xca]-/[0xb2][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "]6[0x8f][0x0][0xd9]u[0x1e]@[0xba]C[0x9a][0xc2]d[0xb2][0xe8][0x9e][0x85][0xb0]/[0xa0]BH[0x94][0x1e]3[0xc3][0xa4][0xf2][0xdf][0xa7]d']2[0xb2][0xbb][0xa9][0x2]<K\6[0xfe]|u[0xee][0xb9]Gz[\r]$[0xaa][0xad][0xe0][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "oE[0x8a][0xc1]54[0xc3][0xf0][0x12][0x82][0xad][0x14][0xa9]I[0xb4][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 87 -  << "[0xae][0xe1][0xfb]k@[0xd3][0xe0][0x1a][0xa2]K[0x8]8[0xd9][0xd8]{[0x82][0x1b]f[0x10]fb[0x1b]d[0xb7][0xd2]$[0xbb]8U[0x9f][0xa0][0x13][0x86][0xf6][0xda]\[0x12]n[0x9f][0x9]&[0x82][0x9]{!![0x1a][0x97]B[0xee][0x82]kx[\r][0x8c]B[0xa9]w[[0xdc][0xff][0x11][0xbc][0x88][\r][0xf2][0xe0][0xad]x0[0x13][[0x15][0xbc][0xbd]][0xc2];H[0xd3][0x1][0x19]#[0x87][0x99]ZQ[0xa9]=[0x94][0xf6][0x1e][0xca][0xe8]b|8[0xc9][0xb8][0x8c]#{O[0x1][0xa5][0xe5][0xa0][0xc4][0xc][0xf1]/d[0xa8][0x14][0xdc]IT[0xca][0x3][0x8a][0xc2]=[0xa2]1I[0xed][0xb3]G[0x96]'[0x99][0x3][0xd5]v[0xa1][0xf4][0x8e]Q[0xb5][0xaa]"[0xea][0xd4]C[0xd4]q[0x88]^([0xd7](K[0xc5]s[0xe5][0xd1]([\r][0x17]0"r.[0x8c]<[0xb5][0x8c][0xae][0xdc]2[0x99][0xcd][0x6]%[0xbc][0xac][0xa8].[0xd7][0xf5]Qb:[0x8c][0xa7][0xeb][0xca]:[[0x7]K[0x2][0x3]!![0xff][0x83][0x9a][0xf4][0xb4][0xcf][0xd5]s[0xb8][0x6][0x84]';[0x18]J[0xb4]mWR[0xa6]n[\r][0xed][0x1f]E^[0xd3])[0x98]H+[0xab]4[0xab]X#_G[\r][0xfb][0xfd][0x2][0xdc][\r][0x99][0xef]Vfy8[0xdf]W[0x9a][0xaa]R<[0xb8][0x80][0xd8][0xf3][0x86][0xc8][0xf5][0xa9][0x11]a[0xb][0xf8][0x80][0xb5][0x90]q[0xb2][0xa2][0x8b][0x5][0xa3]p[0x87][0x9a]PF[0xf9][0x12][0x1a]0[0xa1]|[0xed]a[0xb7]:[0xf5]b[0xbb][0x9e]6[0x90][0xe2][0xdf]|[0xa9]U&[0xc4][0xec][0xaf][0xf6][0x1][0x9b][0xdd]^[0x1][0xf0]3c[0xc8]![0x16][0x8c][0xed][0xe0][0x8b][0xe1]T[0xc8][0xb3][0xb1][0xba]V70[0x8c][0x15]J|[0xbb]B)wUe[0xbd][0xea][0x16][0xcb][0xfa]U[0x88]5[0xc5][0x9f]_x[0x16]\[0xd7][0x7]?[0x14][0xfb]m[0xb1][0x80]x%[0xc]KsW[0xac][0x94]o+[0xea][0xd4][0xaa][0x83][0xab][0x92]6[0xb3]|[0x84][0xa7][0x16]Xjh@[0x96][0x3].[0xca][0xb][0xdc][0xde][0x93][0xc5]ix[0xbd][0xd9][0x12][0xb9][0xfe][0xf4]H[0xb5]f[0x8]C*[0x99][0x82][0xb1][0xfc][0x4]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "[0x13][0xc2]S[0x92][0x9d][0xef][0x9f][0xcd]=[0xb7][0xaa]C[0x2][0xfd][0xf2][0xc4][0xf0][0xcc]i"$[0x87][0x9][0xd1][0xc9][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "[0x86][0xe2]o^[0xa5][0xdb]([0xec][0x84][0xe7]m7[0xaf][0xc4][0xcd][0xd0][0x81][0xbe][0x15]Z[0xb][0xe]c[0xdb]m[0xf7][0x9b][0xb9][0x14]4E[0x89]iU[0xc2][0x88][0xfa][0xe7][0xaa][0xb1][0x8f][0xe9]%[0xd4]w[0xd6][0x7][0x9e]R[0x84]1M[0xd6][0xb8][0xab]LB[0xad]"[0xe7][\r][0x9d][0x93][0x93][0x3][0xba][0x13][0xe1]Q[0xf0]%[0x8c][0xc9]?[0x14]f[0x86]1[0x84]|[0xb4]f[0xcf][0xc0][0xf3][0x16][0xbe][0x19][0xbd][0xa0]ZA[0xa3]\[0x4][0xfb]Q[0xe9],[0xb8][0xad][0xdf]h[0xd5]:[0x18][0xc][0xa8][0xcd]h[0x3]F$[0xc2][0x13][0xea][0xf7]/hX[0x81]hZ[0xa2][0x87]:[0xc0][0xdb][0x5][0xbd]2a$[0xdc]0[0x91][0xac]1[0xcd][[0x12]~[0x98]f[0x18][0xb5] ^[0xef]2[0xb][0xf3]0{[0xed][0xfe][0xff]4[0xd2][0x9a][0xae][0x9d]M[0x8c][0xfc])[0xe2]?[0x1a]O[0x98][0xac]a[0xd6][0xa8]2[0xb3][0xbd]ts[0x8e][0xed]N[0xd3]u[0xaf]<[0x5][0xc6]4E[0x98]0[0x92][0xac][0xed][0xda]gY[0xa6][0x9a]1<*[0x1e][0x1e][0xba]'[0xb][0xb]S[0x16]7[0xd4]l[0xc0][0xbe][0xe9][0x83][0xeb][0x80]}[0xd0]y[0xc0][0xa2][0x8a][0xa5]}B[0xc1]?Bu[0xf9]^[0xb6][0xd7][0xa9]a/[hw[0xb1][0xd0][0x10]k[0x89]v[0x1c]}A[0xc2][0xfd][0xa2]u[0xf7][0x4]w|[0xcd][0xf2][0xf7][0xb8]Hn`[0x9a][0xe2][0xd2]0"3[0xc3][0x89][0xb5]$t[0xb9][0xd2][0x15]h[0xde]d?[0xba]^>Z[0xb7][0xd0][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "[0x86][0xeb]<[0xc][0xc5][0x8c]n2[0xc4][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "[0xb2][0xf6][0xc9][0x95][0xe6][0xa3][0xb9][0x16]2[0x15][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 87 -  << "[0xb3] Q[0x18][0xd6][0xd9][0xdc])[0x9f][0x84][0xcd]V=g[0x2][0xad][0xbe][0x1f]*b[0xca][0xd6]0[0xb2][0x1]3[0xb3][0xeb][0xf7][0x9][0x13][0x13][0x89]%q8<j[0x92][0x94]S[0xe6][0xaf]r[0xcf]R\3[0x99][0x1a][0xa5]a[0x8a])<Rn[0xad][0xaf][0x9c][0xab]S[0xb]W![0xeb] 1[0x9a].[0xc][0x83][0x9][0x92][0xc4][0x16][0xce]M?[0xbf][0x82][0xed][0x9c][0xe7][0x8][0xc1][0xc7]-$[0x1f][0x92][0xfc][0xf6]h[0xa3]][0xeb]QP[0xdb][0xb5][0xbe][0xe1][0xf4][0xf3]d[0xf4]p[0xb]w[0xf7][0xf1][0xc3][0xf0][0x9][0xc6][0xf7]O0[0x83]x[0xf4]0[0x9d][0xd9][\r][0xcf][0xe3][0xf3][0xbd]O[0xdb][0xea][0xf5]OB[0xfb]k[0xa7][0xfe][0xf3][0xed]?[0x0][0x0][0x0][0xff][0xff][0x3][0x0]@[0xfc]f[0xdb][0xad][0x15][0x0][0x0]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "0[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:08 HTTPBuilder.java DEBUG [main] internal.RequestSpecificationImpl$RestAssuredHttpBuilder 550 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+May 19, 2023 2:51:08 PM APIAssignments.Items checkStatusCode
+INFO: Status code is 200
+05-19-2023 14:51:08 BasicClientConnectionManager.java DEBUG [main] conn.BasicClientConnectionManager 161 - Get connection for route {s}->https://automationexercise.com:443
+05-19-2023 14:51:08 DefaultClientConnectionOperator.java DEBUG [main] conn.DefaultClientConnectionOperator 177 - Connecting to automationexercise.com:443
+05-19-2023 14:51:08 RequestAddCookies.java DEBUG [main] protocol.RequestAddCookies 123 - CookieSpec selected: ignoreCookies
+05-19-2023 14:51:08 RequestAuthCache.java DEBUG [main] protocol.RequestAuthCache 77 - Auth cache not set in the context
+05-19-2023 14:51:08 RequestTargetAuthentication.java DEBUG [main] protocol.RequestTargetAuthentication 80 - Target auth state: UNCHALLENGED
+05-19-2023 14:51:08 RequestProxyAuthentication.java DEBUG [main] protocol.RequestProxyAuthentication 89 - Proxy auth state: UNCHALLENGED
+05-19-2023 14:51:08 DefaultRequestDirector.java DEBUG [main] client.DefaultHttpClient 677 - Attempt 1 to execute request
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] conn.DefaultClientConnection 274 - Sending request: GET /api/productsList HTTP/1.1
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  >> "GET /api/productsList HTTP/1.1[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  >> "Accept: */*[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  >> "Host: automationexercise.com[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  >> "Connection: Keep-Alive[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05-19-2023 14:51:08 Wire.java DEBUG [main] http.wire 73 -  >> "[\r][\n]"
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 278 - >> GET /api/productsList HTTP/1.1
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Accept: */*
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Host: automationexercise.com
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Connection: Keep-Alive
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+05-19-2023 14:51:08 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Accept-Encoding: gzip,deflate
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "HTTP/1.1 200 OK[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "Date: Fri, 19 May 2023 09:21:09 GMT[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "Content-Type: text/html; charset=utf-8[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "Transfer-Encoding: chunked[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "Connection: keep-alive[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "vary: Accept,Cookie,Accept-Encoding[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "referrer-policy: same-origin[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "x-frame-options: DENY[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "x-content-type-options: nosniff[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "allow: OPTIONS, DELETE, PUT, POST, GET[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "x-powered-by: Phusion Passenger 6.0.7[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "status: 200 OK[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WzKVvTODmwTuso2WCEIu6e4IYpr07T%2BdwP2T2QxNSBxsLg7IlLVHDaJZl7dIyqm1FGNLqcTMf1eFqWHD4br59ejZxMfXGWiOntH7StHC%2F1JF2RuprdBiU0Q9jKY8EU7EPSnbO%2FZRSz7L"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "Server: cloudflare[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "CF-RAY: 7c9b44a01bbc3e48-SIN[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "Content-Encoding: gzip[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] conn.DefaultClientConnection 259 - Receiving response: HTTP/1.1 200 OK
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 262 - << HTTP/1.1 200 OK
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Date: Fri, 19 May 2023 09:21:09 GMT
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Content-Type: text/html; charset=utf-8
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Transfer-Encoding: chunked
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Connection: keep-alive
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << vary: Accept,Cookie,Accept-Encoding
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << referrer-policy: same-origin
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-frame-options: DENY
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-content-type-options: nosniff
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << allow: OPTIONS, DELETE, PUT, POST, GET
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-powered-by: Phusion Passenger 6.0.7
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << status: 200 OK
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << CF-Cache-Status: DYNAMIC
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WzKVvTODmwTuso2WCEIu6e4IYpr07T%2BdwP2T2QxNSBxsLg7IlLVHDaJZl7dIyqm1FGNLqcTMf1eFqWHD4br59ejZxMfXGWiOntH7StHC%2F1JF2RuprdBiU0Q9jKY8EU7EPSnbO%2FZRSz7L"}],"group":"cf-nel","max_age":604800}
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Server: cloudflare
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << CF-RAY: 7c9b44a01bbc3e48-SIN
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Content-Encoding: gzip
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 265 - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+05-19-2023 14:51:10 DefaultRequestDirector.java DEBUG [main] client.DefaultHttpClient 504 - Connection can be kept alive indefinitely
+05-19-2023 14:51:10 HTTPBuilder.java DEBUG [main] internal.RequestSpecificationImpl$RestAssuredHttpBuilder 547 - Parsing response as: text/html; charset=utf-8
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "3f2[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xc4][0x98]Ks[0xe2]8[0x14][0x85][0xff][0xca]-/[0xb2][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "]6[0x8f][0x0][0xd9]u[0x1e]@[0xba]C[0x9a][0xc2]d[0xb2][0xe8][0x9e][0x85][0xb0]/[0xa0]BH[0x94][0x1e]3[0xc3][0xa4][0xf2][0xdf][0xa7]d']2[0xb2][0xbb][0xa9][0x2]<K\6[0xfe]|u[0xee][0xb9]Gz[\r]$[0xaa][0xad][0xe0][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "oE[0x8a][0xc1]54[0xc3][0xf0][0x12][0x82][0xad][0x14][0xa9]I[0xb4][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 87 -  << "[0xae][0xe1][0xfb]k@[0xd3][0xe0][0x1a][0xa2]K[0x8]8[0xd9][0xd8]{[0x82][0x1b]f[0x10]fb[0x1b]d[0xb7][0xd2]$[0xbb]8U[0x9f][0xa0][0x13][0x86][0xf6][0xda]\[0x12]n[0x9f][0x9]&[0x82][0x9]{!![0x1a][0x97]B[0xee][0x82]kx[\r][0x8c]B[0xa9]w[[0xdc][0xff][0x11][0xbc][0x88][\r][0xf2][0xe0][0xad]x0[0x13][[0x15][0xbc][0xbd]][0xc2];H[0xd3][0x1][0x19]#[0x87][0x99]ZQ[0xa9]=[0x94][0xf6][0x1e][0xca][0xe8]b|8[0xc9][0xb8][0x8c]#{O[0x1][0xa5][0xe5][0xa0][0xc4][0xc][0xf1]/d[0xa8][0x14][0xdc]IT[0xca][0x3][0x8a][0xc2]=[0xa2]1I[0xed][0xb3]G[0x96]'[0x99][0x3][0xd5]v[0xa1][0xf4][0x8e]Q[0xb5][0xaa]"[0xea][0xd4]C[0xd4]q[0x88]^([0xd7](K[0xc5]s[0xe5][0xd1]([\r][0x17]0"r.[0x8c]<[0xb5][0x8c][0xae][0xdc]2[0x99][0xcd][0x6]%[0xbc][0xac][0xa8].[0xd7][0xf5]Qb:[0x8c][0xa7][0xeb][0xca]:[[0x7]K[0x2][0x3]!![0xff][0x83][0x9a][0xf4][0xb4][0xcf][0xd5]s[0xb8][0x6][0x84]';[0x18]J[0xb4]mWR[0xa6]n[\r][0xed][0x1f]E^[0xd3])[0x98]H+[0xab]4[0xab]X#_G[\r][0xfb][0xfd][0x2][0xdc][\r][0x99][0xef]Vfy8[0xdf]W[0x9a][0xaa]R<[0xb8][0x80][0xd8][0xf3][0x86][0xc8][0xf5][0xa9][0x11]a[0xb][0xf8][0x80][0xb5][0x90]q[0xb2][0xa2][0x8b][0x5][0xa3]p[0x87][0x9a]PF[0xf9][0x12][0x1a]0[0xa1]|[0xed]a[0xb7]:[0xf5]b[0xbb][0x9e]6[0x90][0xe2][0xdf]|[0xa9]U&[0xc4][0xec][0xaf][0xf6][0x1][0x9b][0xdd]^[0x1][0xf0]3c[0xc8]![0x16][0x8c][0xed][0xe0][0x8b][0xe1]T[0xc8][0xb3][0xb1][0xba]V70[0x8c][0x15]J|[0xbb]B)wUe[0xbd][0xea][0x16][0xcb][0xfa]U[0x88]5[0xc5][0x9f]_x[0x16]\[0xd7][0x7]?[0x14][0xfb]m[0xb1][0x80]x%[0xc]KsW[0xac][0x94]o+[0xea][0xd4][0xaa][0x83][0xab][0x92]6[0xb3]|[0x84][0xa7][0x16]Xjh@[0x96][0x3].[0xca][0xb][0xdc][0xde][0x93][0xc5]ix[0xbd][0xd9][0x12][0xb9][0xfe][0xf4]H[0xb5]f[0x8]C*[0x99][0x82][0xb1][0xfc][0x4][0x13][0xc2]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "S[0x92][0x9d][0xef][0x9f][0xcd]=[0xb7][0xaa]C[0x2][0xfd][0xf2][0xc4][0xf0][0xcc]i"$[0x87][0x9][0xd1][0xc9][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "[0x86][0xe2]o^[0xa5][0xdb]([0xec][0x84][0xe7]m7[0xaf][0xc4][0xcd][0xd0][0x81][0xbe][0x15]Z[0xb][0xe]c[0xdb]m[0xf7][0x9b][0xb9][0x14]4E[0x89]iU[0xc2][0x88][0xfa][0xe7][0xaa][0xb1][0x8f][0xe9]%[0xd4]w[0xd6][0x7][0x9e]R[0x84]1M[0xd6][0xb8][0xab]LB[0xad]"[0xe7][\r][0x9d][0x93][0x93][0x3][0xba][0x13][0xe1]Q[0xf0]%[0x8c][0xc9]?[0x14]f[0x86]1[0x84]|[0xb4]f[0xcf][0xc0][0xf3][0x16][0xbe][0x19][0xbd][0xa0]ZA[0xa3]\[0x4][0xfb]Q[0xe9],[0xb8][0xad][0xdf]h[0xd5]:[0x18][0xc][0xa8][0xcd]h[0x3]F$[0xc2][0x13][0xea][0xf7]/hX[0x81]hZ[0xa2][0x87]:[0xc0][0xdb][0x5][0xbd]2a$[0xdc]0[0x91][0xac]1[0xcd][[0x12]~[0x98]f[0x18][0xb5] ^[0xef]2[0xb][0xf3]0{[0xed][0xfe][0xff]4[0xd2][0x9a][0xae][0x9d]M[0x8c][0xfc])[0xe2]?[0x1a]O[0x98][0xac]a[0xd6][0xa8]2[0xb3][0xbd]ts[0x8e][0xed]N[0xd3]u[0xaf]<[0x5][0xc6]4E[0x98]0[0x92][0xac][0xed][0xda]gY[0xa6][0x9a]1<*[0x1e][0x1e][0xba]'[0xb][0xb]S[0x16]7[0xd4]l[0xc0][0xbe][0xe9][0x83][0xeb][0x80]}[0xd0]y[0xc0][0xa2][0x8a][0xa5]}B[0xc1]?Bu[0xf9]^[0xb6][0xd7][0xa9]a/[hw[0xb1][0xd0][0x10]k[0x89]v[0x1c]}A[0xc2][0xfd][0xa2]u[0xf7][0x4]w|[0xcd][0xf2][0xf7][0xb8]Hn`[0x9a][0xe2][0xd2]0"3[0xc3][0x89][0xb5]$t[0xb9][0xd2][0x15]h[0xde]d?[0xba]^>Z[0xb7][0xd0][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "[0x86][0xeb]<[0xc][0xc5][0x8c]n2[0xc4][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "[0xb2][0xf6][0xc9][0x95][0xe6][0xa3][0xb9][0x16]2[0x15][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 87 -  << "[0xb3] Q[0x18][0xd6][0xd9][0xdc])[0x9f][0x84][0xcd]V=g[0x2][0xad][0xbe][0x1f]*b[0xca][0xd6]0[0xb2][0x1]3[0xb3][0xeb][0xf7][0x9][0x13][0x13][0x89]%q8<j[0x92][0x94]S[0xe6][0xaf]r[0xcf]R\3[0x99][0x1a][0xa5]a[0x8a])<Rn[0xad][0xaf][0x9c][0xab]S[0xb]W![0xeb] 1[0x9a].[0xc][0x83][0x9][0x92][0xc4][0x16][0xce]M?[0xbf][0x82][0xed][0x9c][0xe7][0x8][0xc1][0xc7]-$[0x1f][0x92][0xfc][0xf6]h[0xa3]][0xeb]QP[0xdb][0xb5][0xbe][0xe1][0xf4][0xf3]d[0xf4]p[0xb]w[0xf7][0xf1][0xc3][0xf0][0x9][0xc6][0xf7]O0[0x83]x[0xf4]0[0x9d][0xd9][\r][0xcf][0xe3][0xf3][0xbd]O[0xdb][0xea][0xf5]OB[0xfb]k[0xa7][0xfe][0xf3][0xed]?[0x0][0x0][0x0][0xff][0xff][0x3][0x0]@[0xfc]f[0xdb][0xad][0x15][0x0][0x0]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "0[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:10 HTTPBuilder.java DEBUG [main] internal.RequestSpecificationImpl$RestAssuredHttpBuilder 550 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+05-19-2023 14:51:10 BasicClientConnectionManager.java DEBUG [main] conn.BasicClientConnectionManager 200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@fd9ebde
+05-19-2023 14:51:10 BasicClientConnectionManager.java DEBUG [main] conn.BasicClientConnectionManager 225 - Connection can be kept alive indefinitely
+HTTP/1.1 200 OK
+Date: Fri, 19 May 2023 09:21:09 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Accept,Cookie,Accept-Encoding
+referrer-policy: same-origin
+x-frame-options: DENY
+x-content-type-options: nosniff
+allow: OPTIONS, DELETE, PUT, POST, GET
+x-powered-by: Phusion Passenger 6.0.7
+status: 200 OK
+CF-Cache-Status: DYNAMIC
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=WzKVvTODmwTuso2WCEIu6e4IYpr07T%2BdwP2T2QxNSBxsLg7IlLVHDaJZl7dIyqm1FGNLqcTMf1eFqWHD4br59ejZxMfXGWiOntH7StHC%2F1JF2RuprdBiU0Q9jKY8EU7EPSnbO%2FZRSz7L"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 7c9b44a01bbc3e48-SIN
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+<html>
+  <body>{"responseCode": 200, "products": [{"id": 1, "name": "Blue Top", "price": "Rs. 500", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 2, "name": "Men Tshirt", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 3, "name": "Sleeveless Dress", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 4, "name": "Stylish Dress", "price": "Rs. 1500", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 5, "name": "Winter Top", "price": "Rs. 600", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 6, "name": "Summer White Top", "price": "Rs. 400", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 7, "name": "Madame Top For Women", "price": "Rs. 1000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 8, "name": "Fancy Green Top", "price": "Rs. 700", "brand": "Polo", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 11, "name": "Sleeves Printed Top - White", "price": "Rs. 499", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 12, "name": "Half Sleeves Top Schiffli Detailing - Pink", "price": "Rs. 359", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 13, "name": "Frozen Tops For Kids", "price": "Rs. 278", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 14, "name": "Full Sleeves Top Cherry - Pink", "price": "Rs. 679", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 15, "name": "Printed Off Shoulder Top - White", "price": "Rs. 315", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 16, "name": "Sleeves Top and Short - Blue &amp; Pink", "price": "Rs. 478", "brand": "Babyhug", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 18, "name": "Little Girls Mr. Panda Shirt", "price": "Rs. 1200", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 19, "name": "Sleeveless Unicorn Patch Gown - Pink", "price": "Rs. 1050", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 20, "name": "Cotton Mull Embroidered Dress", "price": "Rs. 1190", "brand": "Kookie Kids", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 21, "name": "Blue Cotton Indie Mickey Dress", "price": "Rs. 1530", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 22, "name": "Long Maxi Tulle Fancy Dress Up Outfits -Pink", "price": "Rs. 1600", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 23, "name": "Sleeveless Unicorn Print Fit &amp; Flare Net Dress - Multi", "price": "Rs. 1100", "brand": "Biba", "category": {"usertype": {"usertype": "Kids"}, "category": "Dress"}}, {"id": 24, "name": "Colour Blocked Shirt \u2013 Sky Blue", "price": "Rs. 849", "brand": "Allen Solly Junior", "category": {"usertype": {"usertype": "Kids"}, "category": "Tops &amp; Shirts"}}, {"id": 28, "name": "Pure Cotton V-Neck T-Shirt", "price": "Rs. 1299", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 29, "name": "Green Side Placket Detail T-Shirt", "price": "Rs. 1000", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 30, "name": "Premium Polo T-Shirts", "price": "Rs. 1500", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 31, "name": "Pure Cotton Neon Green Tshirt", "price": "Rs. 850", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}, {"id": 33, "name": "Soft Stretch Jeans", "price": "Rs. 799", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 35, "name": "Regular Fit Straight Jeans", "price": "Rs. 1200", "brand": "H&amp;M", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 37, "name": "Grunt Blue Slim Fit Jeans", "price": "Rs. 1400", "brand": "Polo", "category": {"usertype": {"usertype": "Men"}, "category": "Jeans"}}, {"id": 38, "name": "Rose Pink Embroidered Maxi Dress", "price": "Rs. 2300", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Dress"}}, {"id": 39, "name": "Cotton Silk Hand Block Print Saree", "price": "Rs. 3000", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 40, "name": "Rust Red Linen Saree", "price": "Rs. 3500", "brand": "Biba", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 41, "name": "Beautiful Peacock Blue Cotton Linen Saree", "price": "Rs. 5000", "brand": "Madame", "category": {"usertype": {"usertype": "Women"}, "category": "Saree"}}, {"id": 42, "name": "Lace Top For Women", "price": "Rs. 1400", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Women"}, "category": "Tops"}}, {"id": 43, "name": "GRAPHIC DESIGN MEN T SHIRT - BLUE", "price": "Rs. 1389", "brand": "Mast &amp; Harbour", "category": {"usertype": {"usertype": "Men"}, "category": "Tshirts"}}]}</body>
+</html>
+May 19, 2023 2:51:10 PM APIAssignments.Items checkProductList
+INFO: Product List is io.restassured.internal.ValidatableResponseImpl@6f94a5a5
+05-19-2023 14:51:10 BasicClientConnectionManager.java DEBUG [main] conn.BasicClientConnectionManager 161 - Get connection for route {s}->https://automationexercise.com:443
+05-19-2023 14:51:10 DefaultClientConnectionOperator.java DEBUG [main] conn.DefaultClientConnectionOperator 177 - Connecting to automationexercise.com:443
+05-19-2023 14:51:10 RequestAddCookies.java DEBUG [main] protocol.RequestAddCookies 123 - CookieSpec selected: ignoreCookies
+05-19-2023 14:51:10 RequestAuthCache.java DEBUG [main] protocol.RequestAuthCache 77 - Auth cache not set in the context
+05-19-2023 14:51:10 RequestTargetAuthentication.java DEBUG [main] protocol.RequestTargetAuthentication 80 - Target auth state: UNCHALLENGED
+05-19-2023 14:51:10 RequestProxyAuthentication.java DEBUG [main] protocol.RequestProxyAuthentication 89 - Proxy auth state: UNCHALLENGED
+05-19-2023 14:51:10 DefaultRequestDirector.java DEBUG [main] client.DefaultHttpClient 677 - Attempt 1 to execute request
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] conn.DefaultClientConnection 274 - Sending request: GET /api/productsList HTTP/1.1
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  >> "GET /api/productsList HTTP/1.1[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  >> "Accept: */*[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  >> "Host: automationexercise.com[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  >> "Connection: Keep-Alive[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05-19-2023 14:51:10 Wire.java DEBUG [main] http.wire 73 -  >> "[\r][\n]"
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 278 - >> GET /api/productsList HTTP/1.1
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Accept: */*
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Host: automationexercise.com
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Connection: Keep-Alive
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+05-19-2023 14:51:10 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Accept-Encoding: gzip,deflate
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "HTTP/1.1 200 OK[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "Date: Fri, 19 May 2023 09:21:11 GMT[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "Content-Type: text/html; charset=utf-8[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "Transfer-Encoding: chunked[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "Connection: keep-alive[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "vary: Accept,Cookie,Accept-Encoding[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "referrer-policy: same-origin[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "x-frame-options: DENY[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "x-content-type-options: nosniff[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "allow: OPTIONS, DELETE, PUT, POST, GET[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "x-powered-by: Phusion Passenger 6.0.7[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "status: 200 OK[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kKt34uI1gpOfawLWIZndNR9jHz0kLoCjj2VU0OV26odM6fOmx8vipgLSOw8zQY3YkabRm%2FcF5qamJJLYk6aY%2FFB1Ew10PBwoxNeBKLWIDZeFnpCDBwE8Jaf6vQLlABSw1dyogcp6ISmw"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "Server: cloudflare[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "CF-RAY: 7c9b44ac6f7b893c-SIN[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "Content-Encoding: gzip[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] conn.DefaultClientConnection 259 - Receiving response: HTTP/1.1 200 OK
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 262 - << HTTP/1.1 200 OK
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Date: Fri, 19 May 2023 09:21:11 GMT
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Content-Type: text/html; charset=utf-8
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Transfer-Encoding: chunked
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Connection: keep-alive
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << vary: Accept,Cookie,Accept-Encoding
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << referrer-policy: same-origin
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-frame-options: DENY
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-content-type-options: nosniff
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << allow: OPTIONS, DELETE, PUT, POST, GET
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-powered-by: Phusion Passenger 6.0.7
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << status: 200 OK
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << CF-Cache-Status: DYNAMIC
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kKt34uI1gpOfawLWIZndNR9jHz0kLoCjj2VU0OV26odM6fOmx8vipgLSOw8zQY3YkabRm%2FcF5qamJJLYk6aY%2FFB1Ew10PBwoxNeBKLWIDZeFnpCDBwE8Jaf6vQLlABSw1dyogcp6ISmw"}],"group":"cf-nel","max_age":604800}
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Server: cloudflare
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << CF-RAY: 7c9b44ac6f7b893c-SIN
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Content-Encoding: gzip
+05-19-2023 14:51:12 DefaultClientConnection.java DEBUG [main] http.headers 265 - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+05-19-2023 14:51:12 DefaultRequestDirector.java DEBUG [main] client.DefaultHttpClient 504 - Connection can be kept alive indefinitely
+05-19-2023 14:51:12 HTTPBuilder.java DEBUG [main] internal.RequestSpecificationImpl$RestAssuredHttpBuilder 547 - Parsing response as: text/html; charset=utf-8
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "3f2[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xc4][0x98]Ks[0xe2]8[0x14][0x85][0xff][0xca]-/[0xb2][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "]6[0x8f][0x0][0xd9]u[0x1e]@[0xba]C[0x9a][0xc2]d[0xb2][0xe8][0x9e][0x85][0xb0]/[0xa0]BH[0x94][0x1e]3[0xc3][0xa4][0xf2][0xdf][0xa7]d']2[0xb2][0xbb][0xa9][0x2]<K\6[0xfe]|u[0xee][0xb9]Gz[\r]$[0xaa][0xad][0xe0][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "oE[0x8a][0xc1]54[0xc3][0xf0][0x12][0x82][0xad][0x14][0xa9]I[0xb4][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 87 -  << "[0xae][0xe1][0xfb]k@[0xd3][0xe0][0x1a][0xa2]K[0x8]8[0xd9][0xd8]{[0x82][0x1b]f[0x10]fb[0x1b]d[0xb7][0xd2]$[0xbb]8U[0x9f][0xa0][0x13][0x86][0xf6][0xda]\[0x12]n[0x9f][0x9]&[0x82][0x9]{!![0x1a][0x97]B[0xee][0x82]kx[\r][0x8c]B[0xa9]w[[0xdc][0xff][0x11][0xbc][0x88][\r][0xf2][0xe0][0xad]x0[0x13][[0x15][0xbc][0xbd]][0xc2];H[0xd3][0x1][0x19]#[0x87][0x99]ZQ[0xa9]=[0x94][0xf6][0x1e][0xca][0xe8]b|8[0xc9][0xb8][0x8c]#{O[0x1][0xa5][0xe5][0xa0][0xc4][0xc][0xf1]/d[0xa8][0x14][0xdc]IT[0xca][0x3][0x8a][0xc2]=[0xa2]1I[0xed][0xb3]G[0x96]'[0x99][0x3][0xd5]v[0xa1][0xf4][0x8e]Q[0xb5][0xaa]"[0xea][0xd4]C[0xd4]q[0x88]^([0xd7](K[0xc5]s[0xe5][0xd1]([\r][0x17]0"r.[0x8c]<[0xb5][0x8c][0xae][0xdc]2[0x99][0xcd][0x6]%[0xbc][0xac][0xa8].[0xd7][0xf5]Qb:[0x8c][0xa7][0xeb][0xca]:[[0x7]K[0x2][0x3]!![0xff][0x83][0x9a][0xf4][0xb4][0xcf][0xd5]s[0xb8][0x6][0x84]';[0x18]J[0xb4]mWR[0xa6]n[\r][0xed][0x1f]E^[0xd3])[0x98]H+[0xab]4[0xab]X#_G[\r][0xfb][0xfd][0x2][0xdc][\r][0x99][0xef]Vfy8[0xdf]W[0x9a][0xaa]R<[0xb8][0x80][0xd8][0xf3][0x86][0xc8][0xf5][0xa9][0x11]a[0xb][0xf8][0x80][0xb5][0x90]q[0xb2][0xa2][0x8b][0x5][0xa3]p[0x87][0x9a]PF[0xf9][0x12][0x1a]0[0xa1]|[0xed]a[0xb7]:[0xf5]b[0xbb][0x9e]6[0x90][0xe2][0xdf]|[0xa9]U&[0xc4][0xec][0xaf][0xf6][0x1][0x9b][0xdd]^[0x1][0xf0]3c[0xc8]![0x16][0x8c][0xed][0xe0][0x8b][0xe1]T[0xc8][0xb3][0xb1][0xba]V70[0x8c][0x15]J|[0xbb]B)wUe[0xbd][0xea][0x16][0xcb][0xfa]U[0x88]5[0xc5][0x9f]_x[0x16]\[0xd7][0x7]?[0x14][0xfb]m[0xb1][0x80]x%[0xc]KsW[0xac][0x94]o+[0xea][0xd4][0xaa][0x83][0xab][0x92]6[0xb3]|[0x84][0xa7][0x16]Xjh@[0x96][0x3].[0xca][0xb][0xdc][0xde][0x93][0xc5]ix[0xbd][0xd9][0x12][0xb9][0xfe][0xf4]H[0xb5]f[0x8]C*[0x99][0x82][0xb1][0xfc][0x4][0x13][0xc2]S[0x92]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "[0x9d][0xef][0x9f][0xcd]=[0xb7][0xaa]C[0x2][0xfd][0xf2][0xc4][0xf0][0xcc]i"$[0x87][0x9][0xd1][0xc9][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "[0x86][0xe2]o^[0xa5][0xdb]([0xec][0x84][0xe7]m7[0xaf][0xc4][0xcd][0xd0][0x81][0xbe][0x15]Z[0xb][0xe]c[0xdb]m[0xf7][0x9b][0xb9][0x14]4E[0x89]iU[0xc2][0x88][0xfa][0xe7][0xaa][0xb1][0x8f][0xe9]%[0xd4]w[0xd6][0x7][0x9e]R[0x84]1M[0xd6][0xb8][0xab]LB[0xad]"[0xe7][\r][0x9d][0x93][0x93][0x3][0xba][0x13][0xe1]Q[0xf0]%[0x8c][0xc9]?[0x14]f[0x86]1[0x84]|[0xb4]f[0xcf][0xc0][0xf3][0x16][0xbe][0x19][0xbd][0xa0]ZA[0xa3]\[0x4][0xfb]Q[0xe9],[0xb8][0xad][0xdf]h[0xd5]:[0x18][0xc][0xa8][0xcd]h[0x3]F$[0xc2][0x13][0xea][0xf7]/hX[0x81]hZ[0xa2][0x87]:[0xc0][0xdb][0x5][0xbd]2a$[0xdc]0[0x91][0xac]1[0xcd][[0x12]~[0x98]f[0x18][0xb5] ^[0xef]2[0xb][0xf3]0{[0xed][0xfe][0xff]4[0xd2][0x9a][0xae][0x9d]M[0x8c][0xfc])[0xe2]?[0x1a]O[0x98][0xac]a[0xd6][0xa8]2[0xb3][0xbd]ts[0x8e][0xed]N[0xd3]u[0xaf]<[0x5][0xc6]4E[0x98]0[0x92][0xac][0xed][0xda]gY[0xa6][0x9a]1<*[0x1e][0x1e][0xba]'[0xb][0xb]S[0x16]7[0xd4]l[0xc0][0xbe][0xe9][0x83][0xeb][0x80]}[0xd0]y[0xc0][0xa2][0x8a][0xa5]}B[0xc1]?Bu[0xf9]^[0xb6][0xd7][0xa9]a/[hw[0xb1][0xd0][0x10]k[0x89]v[0x1c]}A[0xc2][0xfd][0xa2]u[0xf7][0x4]w|[0xcd][0xf2][0xf7][0xb8]Hn`[0x9a][0xe2][0xd2]0"3[0xc3][0x89][0xb5]$t[0xb9][0xd2][0x15]h[0xde]d?[0xba]^>Z[0xb7][0xd0][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "[0x86][0xeb]<[0xc][0xc5][0x8c]n2[0xc4][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "[0xb2][0xf6][0xc9][0x95][0xe6][0xa3][0xb9][0x16]2[0x15][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 87 -  << "[0xb3] Q[0x18][0xd6][0xd9][0xdc])[0x9f][0x84][0xcd]V=g[0x2][0xad][0xbe][0x1f]*b[0xca][0xd6]0[0xb2][0x1]3[0xb3][0xeb][0xf7][0x9][0x13][0x13][0x89]%q8<j[0x92][0x94]S[0xe6][0xaf]r[0xcf]R\3[0x99][0x1a][0xa5]a[0x8a])<Rn[0xad][0xaf][0x9c][0xab]S[0xb]W![0xeb] 1[0x9a].[0xc][0x83][0x9][0x92][0xc4][0x16][0xce]M?[0xbf][0x82][0xed][0x9c][0xe7][0x8][0xc1][0xc7]-$[0x1f][0x92][0xfc][0xf6]h[0xa3]][0xeb]QP[0xdb][0xb5][0xbe][0xe1][0xf4][0xf3]d[0xf4]p[0xb]w[0xf7][0xf1][0xc3][0xf0][0x9][0xc6][0xf7]O0[0x83]x[0xf4]0[0x9d][0xd9][\r][0xcf][0xe3][0xf3][0xbd]O[0xdb][0xea][0xf5]OB[0xfb]k[0xa7][0xfe][0xf3][0xed]?[0x0][0x0][0x0][0xff][0xff][0x3][0x0]@[0xfc]f[0xdb][0xad][0x15][0x0][0x0]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "0[\r][\n]"
+05-19-2023 14:51:12 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:12 HTTPBuilder.java DEBUG [main] internal.RequestSpecificationImpl$RestAssuredHttpBuilder 550 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+05-19-2023 14:51:12 BasicClientConnectionManager.java DEBUG [main] conn.BasicClientConnectionManager 200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@1d9bd4da
+05-19-2023 14:51:12 BasicClientConnectionManager.java DEBUG [main] conn.BasicClientConnectionManager 225 - Connection can be kept alive indefinitely
+May 19, 2023 2:51:12 PM APIAssignments.Items checkContent
+INFO: 1
+May 19, 2023 2:51:12 PM APIAssignments.Items checkContent
+INFO: Blue Top
+May 19, 2023 2:51:12 PM APIAssignments.Items checkContent
+INFO: Polo
+May 19, 2023 2:51:12 PM APIAssignments.Items checkContent
+INFO: Rs. 500
+May 19, 2023 2:51:12 PM APIAssignments.Items lambda$checkContent$0
+INFO: Blue Top
+May 19, 2023 2:51:12 PM APIAssignments.Items lambda$checkContent$0
+INFO: Polo
+May 19, 2023 2:51:12 PM APIAssignments.Items lambda$checkContent$0
+INFO: Rs. 500
+May 19, 2023 2:51:12 PM APIAssignments.Items lambda$checkContent$0
+INFO: Blue Top
+May 19, 2023 2:51:12 PM APIAssignments.Items lambda$checkContent$0
+INFO: Polo
+May 19, 2023 2:51:12 PM APIAssignments.Items lambda$checkContent$0
+INFO: Rs. 500
+05-19-2023 14:51:13 BasicClientConnectionManager.java DEBUG [main] conn.BasicClientConnectionManager 161 - Get connection for route {s}->https://automationexercise.com:443
+05-19-2023 14:51:13 DefaultClientConnectionOperator.java DEBUG [main] conn.DefaultClientConnectionOperator 177 - Connecting to automationexercise.com:443
+05-19-2023 14:51:14 RequestAddCookies.java DEBUG [main] protocol.RequestAddCookies 123 - CookieSpec selected: ignoreCookies
+05-19-2023 14:51:14 RequestAuthCache.java DEBUG [main] protocol.RequestAuthCache 77 - Auth cache not set in the context
+05-19-2023 14:51:14 RequestTargetAuthentication.java DEBUG [main] protocol.RequestTargetAuthentication 80 - Target auth state: UNCHALLENGED
+05-19-2023 14:51:14 RequestProxyAuthentication.java DEBUG [main] protocol.RequestProxyAuthentication 89 - Proxy auth state: UNCHALLENGED
+05-19-2023 14:51:14 DefaultRequestDirector.java DEBUG [main] client.DefaultHttpClient 677 - Attempt 1 to execute request
+05-19-2023 14:51:14 DefaultClientConnection.java DEBUG [main] conn.DefaultClientConnection 274 - Sending request: GET /api/productsList HTTP/1.1
+05-19-2023 14:51:14 Wire.java DEBUG [main] http.wire 73 -  >> "GET /api/productsList HTTP/1.1[\r][\n]"
+05-19-2023 14:51:14 Wire.java DEBUG [main] http.wire 73 -  >> "Accept: */*[\r][\n]"
+05-19-2023 14:51:14 Wire.java DEBUG [main] http.wire 73 -  >> "Host: automationexercise.com[\r][\n]"
+05-19-2023 14:51:14 Wire.java DEBUG [main] http.wire 73 -  >> "Connection: Keep-Alive[\r][\n]"
+05-19-2023 14:51:14 Wire.java DEBUG [main] http.wire 73 -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)[\r][\n]"
+05-19-2023 14:51:14 Wire.java DEBUG [main] http.wire 73 -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+05-19-2023 14:51:14 Wire.java DEBUG [main] http.wire 73 -  >> "[\r][\n]"
+05-19-2023 14:51:14 DefaultClientConnection.java DEBUG [main] http.headers 278 - >> GET /api/productsList HTTP/1.1
+05-19-2023 14:51:14 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Accept: */*
+05-19-2023 14:51:14 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Host: automationexercise.com
+05-19-2023 14:51:14 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Connection: Keep-Alive
+05-19-2023 14:51:14 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> User-Agent: Apache-HttpClient/4.5.13 (Java/17.0.4.1)
+05-19-2023 14:51:14 DefaultClientConnection.java DEBUG [main] http.headers 281 - >> Accept-Encoding: gzip,deflate
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "HTTP/1.1 200 OK[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "Date: Fri, 19 May 2023 09:21:15 GMT[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "Content-Type: text/html; charset=utf-8[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "Transfer-Encoding: chunked[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "Connection: keep-alive[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "vary: Accept,Cookie,Accept-Encoding[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "referrer-policy: same-origin[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "x-frame-options: DENY[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "x-content-type-options: nosniff[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "allow: OPTIONS, DELETE, PUT, POST, GET[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "x-powered-by: Phusion Passenger 6.0.7[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "status: 200 OK[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "CF-Cache-Status: DYNAMIC[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Dx7i71teyu36X7zlybRCiSgvWXFHk2iNg5cJh9Wh5pMX37ucLtUTZU%2FKHoTwuO8WmfzkuwjaoGJ%2BkDrFhDnR6GRvWx3ydleM62PpBBaspYOHzyCgFh04t1oSr7BZrEmCR1aBgtRqZJ2u"}],"group":"cf-nel","max_age":604800}[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "Server: cloudflare[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "CF-RAY: 7c9b44c0bea14110-SIN[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "Content-Encoding: gzip[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] conn.DefaultClientConnection 259 - Receiving response: HTTP/1.1 200 OK
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 262 - << HTTP/1.1 200 OK
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Date: Fri, 19 May 2023 09:21:15 GMT
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Content-Type: text/html; charset=utf-8
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Transfer-Encoding: chunked
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Connection: keep-alive
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << vary: Accept,Cookie,Accept-Encoding
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << referrer-policy: same-origin
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-frame-options: DENY
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-content-type-options: nosniff
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << allow: OPTIONS, DELETE, PUT, POST, GET
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << x-powered-by: Phusion Passenger 6.0.7
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << status: 200 OK
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << CF-Cache-Status: DYNAMIC
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Dx7i71teyu36X7zlybRCiSgvWXFHk2iNg5cJh9Wh5pMX37ucLtUTZU%2FKHoTwuO8WmfzkuwjaoGJ%2BkDrFhDnR6GRvWx3ydleM62PpBBaspYOHzyCgFh04t1oSr7BZrEmCR1aBgtRqZJ2u"}],"group":"cf-nel","max_age":604800}
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Server: cloudflare
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << CF-RAY: 7c9b44c0bea14110-SIN
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << Content-Encoding: gzip
+05-19-2023 14:51:15 DefaultClientConnection.java DEBUG [main] http.headers 265 - << alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+05-19-2023 14:51:15 DefaultRequestDirector.java DEBUG [main] client.DefaultHttpClient 504 - Connection can be kept alive indefinitely
+05-19-2023 14:51:15 HTTPBuilder.java DEBUG [main] internal.RequestSpecificationImpl$RestAssuredHttpBuilder 547 - Parsing response as: text/html; charset=utf-8
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "3f2[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xc4][0x98]Ks[0xe2]8[0x14][0x85][0xff][0xca]-/[0xb2][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "]6[0x8f][0x0][0xd9]u[0x1e]@[0xba]C[0x9a][0xc2]d[0xb2][0xe8][0x9e][0x85][0xb0]/[0xa0]BH[0x94][0x1e]3[0xc3][0xa4][0xf2][0xdf][0xa7]d']2[0xb2][0xbb][0xa9][0x2]<K\6[0xfe]|u[0xee][0xb9]Gz[\r]$[0xaa][0xad][0xe0][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "oE[0x8a][0xc1]54[0xc3][0xf0][0x12][0x82][0xad][0x14][0xa9]I[0xb4][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 87 -  << "[0xae][0xe1][0xfb]k@[0xd3][0xe0][0x1a][0xa2]K[0x8]8[0xd9][0xd8]{[0x82][0x1b]f[0x10]fb[0x1b]d[0xb7][0xd2]$[0xbb]8U[0x9f][0xa0][0x13][0x86][0xf6][0xda]\[0x12]n[0x9f][0x9]&[0x82][0x9]{!![0x1a][0x97]B[0xee][0x82]kx[\r][0x8c]B[0xa9]w[[0xdc][0xff][0x11][0xbc][0x88][\r][0xf2][0xe0][0xad]x0[0x13][[0x15][0xbc][0xbd]][0xc2];H[0xd3][0x1][0x19]#[0x87][0x99]ZQ[0xa9]=[0x94][0xf6][0x1e][0xca][0xe8]b|8[0xc9][0xb8][0x8c]#{O[0x1][0xa5][0xe5][0xa0][0xc4][0xc][0xf1]/d[0xa8][0x14][0xdc]IT[0xca][0x3][0x8a][0xc2]=[0xa2]1I[0xed][0xb3]G[0x96]'[0x99][0x3][0xd5]v[0xa1][0xf4][0x8e]Q[0xb5][0xaa]"[0xea][0xd4]C[0xd4]q[0x88]^([0xd7](K[0xc5]s[0xe5][0xd1]([\r][0x17]0"r.[0x8c]<[0xb5][0x8c][0xae][0xdc]2[0x99][0xcd][0x6]%[0xbc][0xac][0xa8].[0xd7][0xf5]Qb:[0x8c][0xa7][0xeb][0xca]:[[0x7]K[0x2][0x3]!![0xff][0x83][0x9a][0xf4][0xb4][0xcf][0xd5]s[0xb8][0x6][0x84]';[0x18]J[0xb4]mWR[0xa6]n[\r][0xed][0x1f]E^[0xd3])[0x98]H+[0xab]4[0xab]X#_G[\r][0xfb][0xfd][0x2][0xdc][\r][0x99][0xef]Vfy8[0xdf]W[0x9a][0xaa]R<[0xb8][0x80][0xd8][0xf3][0x86][0xc8][0xf5][0xa9][0x11]a[0xb][0xf8][0x80][0xb5][0x90]q[0xb2][0xa2][0x8b][0x5][0xa3]p[0x87][0x9a]PF[0xf9][0x12][0x1a]0[0xa1]|[0xed]a[0xb7]:[0xf5]b[0xbb][0x9e]6[0x90][0xe2][0xdf]|[0xa9]U&[0xc4][0xec][0xaf][0xf6][0x1][0x9b][0xdd]^[0x1][0xf0]3c[0xc8]![0x16][0x8c][0xed][0xe0][0x8b][0xe1]T[0xc8][0xb3][0xb1][0xba]V70[0x8c][0x15]J|[0xbb]B)wUe[0xbd][0xea][0x16][0xcb][0xfa]U[0x88]5[0xc5][0x9f]_x[0x16]\[0xd7][0x7]?[0x14][0xfb]m[0xb1][0x80]x%[0xc]KsW[0xac][0x94]o+[0xea][0xd4][0xaa][0x83][0xab][0x92]6[0xb3]|[0x84][0xa7][0x16]Xjh@[0x96][0x3].[0xca][0xb][0xdc][0xde][0x93][0xc5]ix[0xbd][0xd9][0x12][0xb9][0xfe][0xf4]H[0xb5]f[0x8]C*[0x99][0x82][0xb1][0xfc][0x4][0x13][0xc2]S[0x92]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "[0x9d][0xef][0x9f][0xcd]=[0xb7][0xaa]C[0x2][0xfd][0xf2][0xc4][0xf0][0xcc]i"$[0x87][0x9][0xd1][0xc9][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "[0x86][0xe2]o^[0xa5][0xdb]([0xec][0x84][0xe7]m7[0xaf][0xc4][0xcd][0xd0][0x81][0xbe][0x15]Z[0xb][0xe]c[0xdb]m[0xf7][0x9b][0xb9][0x14]4E[0x89]iU[0xc2][0x88][0xfa][0xe7][0xaa][0xb1][0x8f][0xe9]%[0xd4]w[0xd6][0x7][0x9e]R[0x84]1M[0xd6][0xb8][0xab]LB[0xad]"[0xe7][\r][0x9d][0x93][0x93][0x3][0xba][0x13][0xe1]Q[0xf0]%[0x8c][0xc9]?[0x14]f[0x86]1[0x84]|[0xb4]f[0xcf][0xc0][0xf3][0x16][0xbe][0x19][0xbd][0xa0]ZA[0xa3]\[0x4][0xfb]Q[0xe9],[0xb8][0xad][0xdf]h[0xd5]:[0x18][0xc][0xa8][0xcd]h[0x3]F$[0xc2][0x13][0xea][0xf7]/hX[0x81]hZ[0xa2][0x87]:[0xc0][0xdb][0x5][0xbd]2a$[0xdc]0[0x91][0xac]1[0xcd][[0x12]~[0x98]f[0x18][0xb5] ^[0xef]2[0xb][0xf3]0{[0xed][0xfe][0xff]4[0xd2][0x9a][0xae][0x9d]M[0x8c][0xfc])[0xe2]?[0x1a]O[0x98][0xac]a[0xd6][0xa8]2[0xb3][0xbd]ts[0x8e][0xed]N[0xd3]u[0xaf]<[0x5][0xc6]4E[0x98]0[0x92][0xac][0xed][0xda]gY[0xa6][0x9a]1<*[0x1e][0x1e][0xba]'[0xb][0xb]S[0x16]7[0xd4]l[0xc0][0xbe][0xe9][0x83][0xeb][0x80]}[0xd0]y[0xc0][0xa2][0x8a][0xa5]}B[0xc1]?Bu[0xf9]^[0xb6][0xd7][0xa9]a/[hw[0xb1][0xd0][0x10]k[0x89]v[0x1c]}A[0xc2][0xfd][0xa2]u[0xf7][0x4]w|[0xcd][0xf2][0xf7][0xb8]Hn`[0x9a][0xe2][0xd2]0"3[0xc3][0x89][0xb5]$t[0xb9][0xd2][0x15]h[0xde]d?[0xba]^>Z[0xb7][0xd0][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "[0x86][0xeb]<[0xc][0xc5][0x8c]n2[0xc4][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "[0xb2][0xf6][0xc9][0x95][0xe6][0xa3][0xb9][0x16]2[0x15][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 87 -  << "[0xb3] Q[0x18][0xd6][0xd9][0xdc])[0x9f][0x84][0xcd]V=g[0x2][0xad][0xbe][0x1f]*b[0xca][0xd6]0[0xb2][0x1]3[0xb3][0xeb][0xf7][0x9][0x13][0x13][0x89]%q8<j[0x92][0x94]S[0xe6][0xaf]r[0xcf]R\3[0x99][0x1a][0xa5]a[0x8a])<Rn[0xad][0xaf][0x9c][0xab]S[0xb]W![0xeb] 1[0x9a].[0xc][0x83][0x9][0x92][0xc4][0x16][0xce]M?[0xbf][0x82][0xed][0x9c][0xe7][0x8][0xc1][0xc7]-$[0x1f][0x92][0xfc][0xf6]h[0xa3]][0xeb]QP[0xdb][0xb5][0xbe][0xe1][0xf4][0xf3]d[0xf4]p[0xb]w[0xf7][0xf1][0xc3][0xf0][0x9][0xc6][0xf7]O0[0x83]x[0xf4]0[0x9d][0xd9][\r][0xcf][0xe3][0xf3][0xbd]O[0xdb][0xea][0xf5]OB[0xfb]k[0xa7][0xfe][0xf3][0xed]?[0x0][0x0][0x0][0xff][0xff][0x3][0x0]@[0xfc]f[0xdb][0xad][0x15][0x0][0x0]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "0[\r][\n]"
+05-19-2023 14:51:15 Wire.java DEBUG [main] http.wire 73 -  << "[\r][\n]"
+05-19-2023 14:51:15 HTTPBuilder.java DEBUG [main] internal.RequestSpecificationImpl$RestAssuredHttpBuilder 550 - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+05-19-2023 14:51:15 BasicClientConnectionManager.java DEBUG [main] conn.BasicClientConnectionManager 200 - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@38588dea
+05-19-2023 14:51:15 BasicClientConnectionManager.java DEBUG [main] conn.BasicClientConnectionManager 225 - Connection can be kept alive indefinitely
+May 19, 2023 2:51:15 PM APIAssignments.Items checkLength
+INFO: The length is : 34 products
+
+===============================================
+Default Suite
+Total tests run: 4, Passes: 4, Failures: 0, Skips: 0
+===============================================
+
+
+Process finished with exit code 0

@@ -7,4 +7,9 @@ public class ReusableMethod {
             String url="https://automationexercise.com/api/productsList";
             return url;
         }
+    int productId=1;
+    String productName="Blue Top";
+    String price="Rs. 500";
+    String brand="Polo";
+
     }
