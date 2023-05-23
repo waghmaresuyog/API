@@ -63,10 +63,6 @@ public class Items {
         objectProduct.setProductPrice(productPrice);
         objectProduct.setProductBrand(productBand);
         objectProduct.getProductId();
-        log.info(objectProduct.getProductId());
-        log.info(objectProduct.getProductName());
-        log.info(objectProduct.getProductBrand());
-        log.info(objectProduct.getProductPrice());
 
         getProductData.add(objectProduct);
         for (int index = 0; index < productsArray.size(); index++) {
