@@ -5,10 +5,10 @@ public class Product {
     public Product() {
     }
 
-    String productId;
-    String productName;
-    String productPrice;
-    String productBrand;
+   private static String productId;
+   private static String productName;
+   private static String productPrice;
+   private static String productBrand;
 
     public String getProductId() {
         return productId;

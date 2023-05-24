@@ -3,7 +3,6 @@ package APIAssignments;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import io.restassured.response.ResponseBody;
 import org.apache.log4j.PropertyConfigurator;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
@@ -20,7 +19,7 @@ public class Items {
     private static String url;
 
     public Items() {
-        url = ReusableMethod.getUrl();
+        url = BaseUrl.getUrl();
     }
 
     private static final Logger log = Logger.getLogger("Items.class");
@@ -33,7 +32,7 @@ public class Items {
     @Test(priority = 1)
     public void checkStatusCode() {
         {
-            Response response = RestAssured.get(ReusableMethod.getUrl()).then().extract().response();
+            Response response = RestAssured.get(BaseUrl.getUrl()).then().extract().response();
             Assert.assertEquals(response.getStatusCode(), 200);
             log.info("Status code is " + response.getStatusCode());
         }
@@ -47,21 +46,17 @@ public class Items {
 
     @Test(priority = 3)
     public void checkContent() {
-        ReusableMethod reusableMethod = new ReusableMethod();
+       BaseUrl reusableMethod = new BaseUrl();
         Response response = RestAssured.get(url).then().extract().response();
         JsonPath jsonObject = new JsonPath(response.asString());//response convert json into string
         List<Product> productsArray = jsonObject.get("products");
         List<Product> getProductData = new ArrayList<>();
-        var productID = reusableMethod.productId;
-        var productName = reusableMethod.productName;
-        var productPrice = reusableMethod.price;
-        var productBand = reusableMethod.brand;
 
         Product objectProduct = new Product();
-        objectProduct.setProductId(String.valueOf(productID));
-        objectProduct.setProductName(productName);
-        objectProduct.setProductPrice(productPrice);
-        objectProduct.setProductBrand(productBand);
+        objectProduct.setProductId(String.valueOf(1));
+        objectProduct.setProductName("Blue Top");
+        objectProduct.setProductPrice("Rs. 500");
+        objectProduct.setProductBrand("Polo");
         objectProduct.getProductId();
 
         getProductData.add(objectProduct);
@@ -71,19 +66,18 @@ public class Items {
             String price = jsonObject.getString("products[" + index + "].price");
             String brand = jsonObject.getString("products[" + index + "].brand");
             getProductData.forEach(displayList -> {
-                if (name.equals(displayList.productName)) {
-                    log.info(displayList.productId);
-                    log.info(displayList.productName);
-                    log.info(displayList.productBrand);
-                    log.info(displayList.productPrice);
-                    Assert.assertEquals(displayList.productId, id);
-                    Assert.assertEquals(displayList.productName, name);
-                    Assert.assertEquals(displayList.productPrice, price);
-                    Assert.assertEquals(displayList.productBrand, brand);
+                if (name.equals(objectProduct.getProductName())) {
+                    log.info(objectProduct.getProductId());
+                    log.info(objectProduct.getProductName());
+                    log.info(objectProduct.getProductBrand());
+                    log.info(objectProduct.getProductPrice());
+                    Assert.assertEquals(objectProduct.getProductId(), id);
+                    Assert.assertEquals(objectProduct.getProductName(), name);
+                    Assert.assertEquals(objectProduct.getProductPrice(), price);
+                    Assert.assertEquals(objectProduct.getProductBrand(), brand);
                 }
             });
         }
-
     }
 
     @Test(priority = 4)
