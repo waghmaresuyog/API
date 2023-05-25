@@ -4,15 +4,19 @@ import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.apache.log4j.PropertyConfigurator;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
+
 
 import static io.restassured.RestAssured.*;
+import static org.apache.logging.log4j.Logger.*;
+
 
 public class Items {
 
@@ -22,12 +26,14 @@ public class Items {
         url = BaseUrl.getUrl();
     }
 
-    private static final Logger log = Logger.getLogger("Items.class");
+    private static Logger log = LogManager.getLogger("Items.class");
 
     @BeforeTest
+
     public void getLoggerDisplay() {
         PropertyConfigurator.configure("log4j2.properties");
     }
+
 
     @Test(priority = 1)
     public void checkStatusCode() {
@@ -46,19 +52,16 @@ public class Items {
 
     @Test(priority = 3)
     public void checkContent() {
-       BaseUrl reusableMethod = new BaseUrl();
+        BaseUrl reusableMethod = new BaseUrl();
         Response response = RestAssured.get(url).then().extract().response();
         JsonPath jsonObject = new JsonPath(response.asString());//response convert json into string
         List<Product> productsArray = jsonObject.get("products");
         List<Product> getProductData = new ArrayList<>();
-
         Product objectProduct = new Product();
         objectProduct.setProductId(String.valueOf(1));
         objectProduct.setProductName("Blue Top");
         objectProduct.setProductPrice("Rs. 500");
         objectProduct.setProductBrand("Polo");
-        objectProduct.getProductId();
-
         getProductData.add(objectProduct);
         for (int index = 0; index < productsArray.size(); index++) {
             String id = jsonObject.getString("products[" + index + "].id");
