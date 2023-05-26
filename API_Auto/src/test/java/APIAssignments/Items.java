@@ -10,6 +10,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -19,26 +20,23 @@ import static org.apache.logging.log4j.Logger.*;
 
 
 public class Items {
-
     private static String url;
-
     public Items() {
-        url = BaseUrl.getUrl();
+        try {
+            url = UrlReader.getUrl();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
-
-    private static Logger log = LogManager.getLogger("Items.class");
-
+    private static final Logger log = LogManager.getLogger("Items.class");
     @BeforeTest
-
     public void getLoggerDisplay() {
         PropertyConfigurator.configure("log4j2.properties");
     }
-
-
     @Test(priority = 1)
     public void checkStatusCode() {
         {
-            Response response = RestAssured.get(BaseUrl.getUrl()).then().extract().response();
+            Response response = RestAssured.get(url).then().extract().response();
             Assert.assertEquals(response.getStatusCode(), 200);
             log.info("Status code is " + response.getStatusCode());
         }
@@ -52,7 +50,7 @@ public class Items {
 
     @Test(priority = 3)
     public void checkContent() {
-        BaseUrl reusableMethod = new BaseUrl();
+
         Response response = RestAssured.get(url).then().extract().response();
         JsonPath jsonObject = new JsonPath(response.asString());//response convert json into string
         List<Product> productsArray = jsonObject.get("products");
