@@ -35,11 +35,9 @@ public class Items {
     }
     @Test(priority = 1)
     public void checkStatusCode() {
-        {
             Response response = RestAssured.get(url).then().extract().response();
             Assert.assertEquals(response.getStatusCode(), 200);
             log.info("Status code is " + response.getStatusCode());
-        }
     }
 
     @Test(priority = 2)
@@ -50,7 +48,6 @@ public class Items {
 
     @Test(priority = 3)
     public void checkContent() {
-
         Response response = RestAssured.get(url).then().extract().response();
         JsonPath jsonObject = new JsonPath(response.asString());//response convert json into string
         List<Product> productsArray = jsonObject.get("products");
