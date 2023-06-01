@@ -9,13 +9,24 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class AllProduct {
+    private static String url;
+
+    public AllProduct() {
+        try {
+            url = Reader.getUrl();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private static final Logger log = LogManager.getLogger("AllProduct.class");
 
     @Test(priority = 1)
     public void checkStatusCode() {
-        RestAssured.baseURI = "https://automationexercise.com/api/productsList";
-        Response response = RestAssured.post("https://automationexercise.com/api/productsList")
+        Response response = RestAssured.post(url)
                 .then().extract().response();
         Assert.assertEquals(response.getStatusCode(), 200);
         System.out.println("The response code is : " + response.getStatusCode());
@@ -24,7 +35,7 @@ public class AllProduct {
 
     @Test(priority = 2)
     public void checkResponse() {
-        Response response = RestAssured.post("https://automationexercise.com/api/productsList")
+        Response response = RestAssured.post(url)
                 .then().extract().response();
         JsonPath jsonResponse = new JsonPath(response.asString());
         ResponseBody body = response.getBody(); //use to print response body
