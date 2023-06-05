@@ -40,5 +40,7 @@ public class AllProduct {
         log.info("Response Body is: " + body.asString());
         Assert.assertEquals(response.getStatusCode(), 200);
         log.info("the Status code is : " + response.getStatusCode());
+
+        
     }
 }
