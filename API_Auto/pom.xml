@@ -55,12 +55,16 @@
             <version>1.2.12</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>androidx.loader</groupId>
             <artifactId>loader</artifactId>
             <version>1.1.0</version>
         </dependency>
     </dependencies>
+
+>>>>>>> 88a1bbef8c306b7931d58247a38c3ca2c3672c03
+
     <repositories>
         <repository>
             <id>gmaven</id>
