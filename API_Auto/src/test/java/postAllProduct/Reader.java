@@ -13,6 +13,7 @@ public class Reader {
         return properties;
     }
 
+
     public static String getUrl() throws IOException {
         return getProperties().getProperty("baseURL");
     }
