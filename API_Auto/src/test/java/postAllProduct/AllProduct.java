@@ -1,4 +1,5 @@
-package APIAssignments;
+package postAllProduct;
+
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -26,21 +27,18 @@ public class AllProduct {
 
     @Test(priority = 1)
     public void checkStatusCode() {
-        Response response = RestAssured.post(url)
-                .then().extract().response();
+        Response response = RestAssured.post(url).then().extract().response();
         Assert.assertEquals(response.getStatusCode(), 200);
-        System.out.println("The response code is : " + response.getStatusCode());
         log.info("The response code is : " + response.getStatusCode());
     }
 
     @Test(priority = 2)
     public void checkResponse() {
-        Response response = RestAssured.post(url)
-                .then().extract().response();
+        Response response = RestAssured.post(url).then().extract().response();
         JsonPath jsonResponse = new JsonPath(response.asString());
         ResponseBody body = response.getBody(); //use to print response body
         log.info("Response Body is: " + body.asString());
-        log.info("The response message is : " + jsonResponse.get("message"));
-        log.info("The response code is : " + jsonResponse.get("responseCode"));
+        Assert.assertEquals(response.getStatusCode(), 200);
+        log.info("the Status code is : " + response.getStatusCode());
     }
 }

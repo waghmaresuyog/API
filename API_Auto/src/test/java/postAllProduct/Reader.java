@@ -1,4 +1,4 @@
-package APIAssignments;
+package postAllProduct;
 
 import java.io.FileInputStream;
 import java.io.IOException;
