@@ -31,6 +31,7 @@ public class AllProduct {
         Assert.assertEquals(response.getStatusCode(), 200);
         System.out.println("The response code is : " + response.getStatusCode());
         log.info("The response code is : " + response.getStatusCode());
+        
     }
 
     @Test(priority = 2)
