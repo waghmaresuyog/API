@@ -1,6 +1,5 @@
 package postAllProduct;
 
-
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -40,6 +39,5 @@ public class AllProduct {
         log.info("Response Body is: " + body.asString());
         Assert.assertEquals(response.getStatusCode(), 200);
         log.info("the Status code is : " + response.getStatusCode());
-        
     }
 }
