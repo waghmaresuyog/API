@@ -29,6 +29,7 @@ public class AllProduct {
         Response response = RestAssured.post(url).then().extract().response();
         Assert.assertEquals(response.getStatusCode(), 200);
         log.info("The response code is : " + response.getStatusCode());
+        
     }
 
     @Test(priority = 2)
