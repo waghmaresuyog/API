@@ -54,17 +54,8 @@
             <version>1.2.12</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>androidx.loader</groupId>
-            <artifactId>loader</artifactId>
-            <version>1.1.0</version>
-        </dependency>
+
     </dependencies>
     <repositories>
-        <repository>
-            <id>gmaven</id>
-            <name>Google Maven</name>
-            <url>https://maven.google.com/</url>
-        </repository>
     </repositories>
 </project>
