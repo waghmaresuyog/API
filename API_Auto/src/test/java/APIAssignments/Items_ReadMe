@@ -1,0 +1,24 @@
+May 22, 2023 5:55:59 PM APIAssignments.Items checkStatusCode
+INFO: Status code is 200
+
+May 22, 2023 5:56:00 PM APIAssignments.Items checkProductList
+INFO: Product List is io.restassured.internal.ValidatableResponseImpl@3ed7821
+
+May 22, 2023 5:59:45 PM APIAssignments.Items lambda$checkContent$0
+INFO: 1
+May 22, 2023 5:59:45 PM APIAssignments.Items lambda$checkContent$0
+INFO: Blue Top
+May 22, 2023 5:59:45 PM APIAssignments.Items lambda$checkContent$0
+INFO: Polo
+May 22, 2023 5:59:45 PM APIAssignments.Items lambda$checkContent$0
+INFO: Rs. 500
+
+
+May 22, 2023 5:56:04 PM APIAssignments.Items checkLength
+INFO: The length is : 34 products
+
+===============================================
+Default Suite
+Total tests run: 4, Passes: 4, Failures: 0, Skips: 0
+===============================================
+
