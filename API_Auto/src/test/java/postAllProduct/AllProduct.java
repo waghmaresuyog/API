@@ -39,6 +39,6 @@ public class AllProduct {
         ResponseBody body = response.getBody(); //use to print response body
         log.info("Response Body is: " + body.asString());
         Assert.assertEquals(response.getStatusCode(), 200);
-        
+
     }
 }
