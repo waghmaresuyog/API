@@ -1,10 +1,11 @@
-package postAllProduct;
+package APIAssignments;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-public class Reader {
+public class UrlReader {
+
     public static Properties getProperties() throws IOException {
         String userDirectory = System.getProperty("user.dir");
         FileInputStream file = new FileInputStream(userDirectory + "/Config.properties");
