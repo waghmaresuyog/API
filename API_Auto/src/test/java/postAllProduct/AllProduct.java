@@ -1,5 +1,6 @@
 package postAllProduct;
 
+import APIAssignments.UrlReader;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -16,7 +17,7 @@ public class AllProduct {
 
     public AllProduct() {
         try {
-            url = Reader.getUrl();
+            url = UrlReader.getUrl();
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -35,7 +36,6 @@ public class AllProduct {
     @Test(priority = 2)
     public void checkResponse() {
         Response response = RestAssured.post(url).then().extract().response();
-        JsonPath jsonResponse = new JsonPath(response.asString());
         ResponseBody body = response.getBody(); //use to print response body
         log.info("Response Body is: " + body.asString());
         Assert.assertEquals(response.getStatusCode(), 200);
