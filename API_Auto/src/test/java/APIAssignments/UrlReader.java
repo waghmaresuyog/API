@@ -18,5 +18,7 @@ public class UrlReader {
     public static String getUrl() throws IOException {
         return getProperties().getProperty("baseURL");
 
+        
+
     }
 }
