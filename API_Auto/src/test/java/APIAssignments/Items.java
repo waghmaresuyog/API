@@ -29,6 +29,7 @@ public class Items {
         }
     }
     private static final Logger log = LogManager.getLogger("Items.class");
+
     @BeforeTest
     public void getLoggerDisplay() {
         PropertyConfigurator.configure("log4j2.properties");
