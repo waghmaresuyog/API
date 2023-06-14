@@ -2,7 +2,6 @@ package postAllProduct;
 
 import APIAssignments.UrlReader;
 import io.restassured.RestAssured;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import org.apache.logging.log4j.LogManager;
@@ -30,7 +29,6 @@ public class AllProduct {
         Response response = RestAssured.post(url).then().extract().response();
         Assert.assertEquals(response.getStatusCode(), 200);
         log.info("The response code is : " + response.getStatusCode());
-        
     }
 
     @Test(priority = 2)
@@ -38,7 +36,5 @@ public class AllProduct {
         Response response = RestAssured.post(url).then().extract().response();
         ResponseBody body = response.getBody(); //use to print response body
         log.info("Response Body is: " + body.asString());
-        Assert.assertEquals(response.getStatusCode(), 200);
-
     }
 }
