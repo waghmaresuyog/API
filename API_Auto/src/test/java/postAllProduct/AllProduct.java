@@ -2,6 +2,7 @@ package postAllProduct;
 
 import APIAssignments.UrlReader;
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseBody;
 import org.apache.logging.log4j.LogManager;
@@ -34,7 +35,10 @@ public class AllProduct {
     @Test(priority = 2)
     public void checkResponse() {
         Response response = RestAssured.post(url).then().extract().response();
+        JsonPath jsonResponse = new JsonPath(response.asString());
         ResponseBody body = response.getBody(); //use to print response body
         log.info("Response Body is: " + body.asString());
+        log.info("the responce message is : " + jsonResponse.get("message"));
+        Assert.assertEquals(jsonResponse.get("message"), "This request method is not supported.");
     }
 }

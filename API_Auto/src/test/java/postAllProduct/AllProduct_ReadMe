@@ -1,8 +1,9 @@
 Call API 2: POST To All Products List and validate
 Status.
-Response message.
-[INFO ] 2023-06-07 16:52:06.479 [main] class - The response code is : 200
-[INFO ] 2023-06-07 16:52:07.773 [main] class - Response Body is: {"responseCode": 405, "message": "This request method is not supported."}
+[INFO ] 2023-06-14 15:56:53.958 [main] class - The response code is : 200
+[INFO ] 2023-06-14 15:56:55.018 [main] class - Response Body is: {"responseCode": 405, "message": "This request method is not supported."}
+[INFO ] 2023-06-14 15:56:55.507 [main] class - the response message is : This request method is not supported.
+
 ===============================================
 Default Suite
 Total tests run: 2, Passes: 2, Failures: 0, Skips: 0
