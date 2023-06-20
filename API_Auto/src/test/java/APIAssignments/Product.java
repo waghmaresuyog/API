@@ -1,9 +1,7 @@
 package APIAssignments;
 
-public class Product {
 
-    public Product() {
-    }
+public class Product {
 
    private static String productId;
    private static String productName;

@@ -17,12 +17,10 @@ public class UrlReader {
         return properties;
     }
 
-    public static String getUrl() throws IOException {
+    public static String getUrl() throws IOException {// product list
         return getProperties().getProperty("baseURL");
     }
-
-       @BeforeTest
-     public void getLoggerDisplay() {
-       PropertyConfigurator.configure("log4j2.properties");
-     }
+    public  static String postUrl() throws IOException {
+        return getProperties().getProperty("endUrl");
+    }
 }
