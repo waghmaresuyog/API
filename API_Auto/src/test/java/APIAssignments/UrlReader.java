@@ -23,4 +23,7 @@ public class UrlReader {
     public  static String postUrl() throws IOException {
         return getProperties().getProperty("endUrl");
     }
+    public static String base() throws IOException {
+        return getProperties().getProperty("commonURL");
+    }
 }
