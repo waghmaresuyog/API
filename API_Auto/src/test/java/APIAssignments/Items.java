@@ -1,27 +1,24 @@
 package APIAssignments;
 
+import config.UrlReader;
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.apache.log4j.PropertyConfigurator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
-
 import static io.restassured.RestAssured.*;
-import static org.apache.logging.log4j.Logger.*;
 
 
 public class Items {
-   private static String url;
+    private static String url;
+
     public Items() {
         try {
             url = UrlReader.getUrl();
@@ -29,14 +26,15 @@ public class Items {
             throw new RuntimeException(e);
         }
     }
+
     private static final Logger log = LogManager.getLogger("Items.class");
 
 
     @Test(priority = 1)
     public void checkStatusCode() {
-            Response response = RestAssured.get(url).then().extract().response();
-            Assert.assertEquals(response.getStatusCode(), 200);
-            log.info("Status code is " + response.getStatusCode());
+        Response response = RestAssured.get(url).then().extract().response();
+        Assert.assertEquals(response.getStatusCode(), 200);
+        log.info("Status code is " + response.getStatusCode());
     }
 
     @Test(priority = 2)
