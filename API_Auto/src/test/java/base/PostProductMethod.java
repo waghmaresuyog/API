@@ -1,21 +1,16 @@
-package postAllProduct;
+package base;
 
 
-import config.EndPoint;
-import config.UrlReader;
+import endPoint.EndPoint;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 import java.io.IOException;
 
-public class PostProductMethod extends EndPoint {
-    public static String finalUrl;
+import static base.Base_URL.giveUrl;
 
-    // combine base url and end point store into finalUrl and return it
-    public static String giveUrl() throws IOException {
-        finalUrl = productBaseUrl() + productEndURL();
-        return finalUrl;
-    }
+
+public class PostProductMethod extends EndPoint {
 
     // Post request hit and return the response
     public Response postResponse() throws IOException {

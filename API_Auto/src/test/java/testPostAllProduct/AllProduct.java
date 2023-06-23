@@ -1,5 +1,6 @@
-package postAllProduct;
+package testPostAllProduct;
 
+import base.PostProductMethod;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.ResponseBody;
 import org.apache.logging.log4j.LogManager;
