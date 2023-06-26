@@ -12,5 +12,4 @@ public class EndPoint extends UrlReader {
         endUrl = "productsList";
         return endUrl;
     }
-
 }

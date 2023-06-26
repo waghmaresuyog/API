@@ -11,7 +11,7 @@ import static base.ServiceUrl.giveUrl;
 
 public class ProductsListMethod extends EndPoint {
 
-    public  Response getResponce() throws IOException {
+    public Response getResponce() throws IOException {
         Response response = RestAssured.get(getUrl()).then().extract().response();
         return response;
     }

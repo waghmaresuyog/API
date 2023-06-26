@@ -13,7 +13,6 @@ import java.util.List;
 
 import static io.restassured.RestAssured.*;
 
-
 public class Items extends ProductsListMethod {
 
     private static final Logger log = LogManager.getLogger("Items.class");

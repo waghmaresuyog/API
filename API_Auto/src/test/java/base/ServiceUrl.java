@@ -2,7 +2,6 @@ package base;
 
 import java.io.IOException;
 
-import static endPoint.EndPoint.getEndUrl;
 import static endPoint.EndPoint.productEndURL;
 import static helper.UrlReader.getProperties;
 
@@ -26,6 +25,4 @@ public class ServiceUrl {
         finalUrl = productBaseUrl() + productEndURL();
         return finalUrl;
     }
-
-
 }
