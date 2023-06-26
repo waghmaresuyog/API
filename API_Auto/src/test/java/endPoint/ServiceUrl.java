@@ -8,19 +8,20 @@ import static configReader.UrlReader.getProperties;
 public class ServiceUrl {
     //This is Base url read from properties file return the base url
 
-    public static String productBaseUrl() throws IOException {
-
-        return getProperties().getProperty("UrlBase");
+    public static String productBaseUrl()  {
+        String commonUrl;
+        try {
+            commonUrl= getProperties().getProperty("UrlBase");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        return commonUrl;
     }
 
     public static String getFinalUrl;
 
     public static String getUrl() {
-        try {
-            getFinalUrl = productBaseUrl() + productEndURL();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        getFinalUrl = productBaseUrl() + productEndURL();
         return getFinalUrl;
     }
 
@@ -28,11 +29,7 @@ public class ServiceUrl {
 
     // combine base url and end point store into finalUrl and return it
     public static String giveUrl() {
-        try {
-            finalUrl = productBaseUrl() + productEndURL();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
+        finalUrl = productBaseUrl() + productEndURL();
         return finalUrl;
     }
 }
