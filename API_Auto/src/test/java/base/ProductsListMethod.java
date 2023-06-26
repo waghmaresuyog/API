@@ -1,23 +1,19 @@
 package base;
 
-
 import endPoint.EndPoint;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
 import java.io.IOException;
 
-import static base.ServiceUrl.productBaseUrl;
+import static base.ServiceUrl.getUrl;
+import static base.ServiceUrl.giveUrl;
 
+public class ProductsListMethod extends EndPoint {
 
-public class PostProductMethod extends EndPoint {
-
-    public static String finalUrl;
-
-    // combine base url and end point store into finalUrl and return it
-    public static String giveUrl() throws IOException {
-        finalUrl = productBaseUrl() + productEndURL();
-        return finalUrl;
+    public  Response getResponce() throws IOException {
+        Response response = RestAssured.get(getUrl()).then().extract().response();
+        return response;
     }
 
     // Post request hit and return the response

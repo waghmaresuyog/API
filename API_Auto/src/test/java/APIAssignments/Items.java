@@ -1,9 +1,7 @@
 package APIAssignments;
 
-import helper.UrlReader;
-import io.restassured.RestAssured;
+import base.ProductsListMethod;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
@@ -16,37 +14,26 @@ import java.util.List;
 import static io.restassured.RestAssured.*;
 
 
-public class Items {
-    private static String url;
-
-    public Items() {
-        try {
-            url = UrlReader.getUrl();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
+public class Items extends ProductsListMethod {
 
     private static final Logger log = LogManager.getLogger("Items.class");
 
-
     @Test(priority = 1)
-    public void checkStatusCode() {
-        Response response = RestAssured.get(url).then().extract().response();
-        Assert.assertEquals(response.getStatusCode(), 200);
-        log.info("Status code is " + response.getStatusCode());
+    public void checkStatusCode() throws IOException {
+        Assert.assertEquals(getResponce().getStatusCode(), 200);
+        log.info("Status code is " + getResponce().getStatusCode());
     }
 
     @Test(priority = 2)
-    public void checkProductList() {
-        var getList = given().when().get(url).then().log().all().toString();
+    public void checkProductList() throws IOException {
+        var getList = getResponce().asString();
         log.info("Product List is " + getList);
     }
 
     @Test(priority = 3)
-    public void checkContent() {
-        Response response = RestAssured.get(url).then().extract().response();
-        JsonPath jsonObject = new JsonPath(response.asString());//response convert json into string
+    public void checkContent() throws IOException {
+        //response convert json into string
+        JsonPath jsonObject = new JsonPath(getResponce().asString());
         List<Product> productsArray = jsonObject.get("products");
         List<Product> getProductData = new ArrayList<>();
         Product objectProduct = new Product();
@@ -76,8 +63,8 @@ public class Items {
     }
 
     @Test(priority = 4)
-    public void checkLength() {
-        var response = given().when().get(url).then().extract().asString();
+    public void checkLength() throws IOException {
+        var response = getResponce().asString();
         JsonPath jsonResponse = new JsonPath(response);
         var idLength = jsonResponse.getInt("products.id.size()");
         log.info("The length is : " + idLength + " products");

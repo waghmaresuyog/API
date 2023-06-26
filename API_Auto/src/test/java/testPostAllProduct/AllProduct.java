@@ -1,6 +1,6 @@
 package testPostAllProduct;
 
-import base.PostProductMethod;
+import base.ProductsListMethod;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.ResponseBody;
 import org.apache.logging.log4j.LogManager;
@@ -10,18 +10,18 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class AllProduct extends PostProductMethod {
+public class AllProduct extends ProductsListMethod {
     private static final Logger log = LogManager.getLogger("AllProduct.class");
 
     //check status code hitting the post request
     @Test(priority = 1)
-    public void checkStatusCode() throws IOException {
+    public void statusCode_Product_PostMethod() throws IOException {
         Assert.assertEquals(postResponse().getStatusCode(), 200);
         log.info("The response code is : " + postResponse().getStatusCode());
     }
 
     @Test(priority = 2)
-    public void checkResponse() throws IOException {
+    public void response_Product_PostMethod() throws IOException {
         JsonPath jsonResponse = new JsonPath(postResponse().asString());
         ResponseBody body = postResponse().getBody(); //use to print response body
         log.info("Response Body is: " + body.asString());

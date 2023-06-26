@@ -13,9 +13,4 @@ public class UrlReader {
         properties.load(file);
         return properties;
     }
-
-    // this method for first Assignment 1 read complete url here product list
-    public static String getUrl() throws IOException {
-        return getProperties().getProperty("baseURL");
-    }
 }
