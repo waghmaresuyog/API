@@ -1,4 +1,4 @@
-package APIAssignments;
+package payload;
 
 
 public class Product {

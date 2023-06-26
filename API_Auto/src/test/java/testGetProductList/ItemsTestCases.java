@@ -1,38 +1,36 @@
-package APIAssignments;
+package testGetProductList;
 
-import base.ProductsListMethod;
+import client.ProductsListMethod;
 import io.restassured.path.json.JsonPath;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import payload.Product;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import static io.restassured.RestAssured.*;
-
-public class Items extends ProductsListMethod {
+public class ItemsTestCases extends ProductsListMethod {
 
     private static final Logger log = LogManager.getLogger("Items.class");
 
     @Test(priority = 1)
-    public void checkStatusCode() throws IOException {
-        Assert.assertEquals(getResponce().getStatusCode(), 200);
-        log.info("Status code is " + getResponce().getStatusCode());
+    public void checkStatusCode() {
+        Assert.assertEquals(getResponse().getStatusCode(), 200);
+        log.info("Status code is " + getResponse().getStatusCode());
     }
 
     @Test(priority = 2)
-    public void checkProductList() throws IOException {
-        var getList = getResponce().asString();
+    public void checkProductList() {
+        var getList = getResponse().asString();
         log.info("Product List is " + getList);
     }
 
     @Test(priority = 3)
-    public void checkContent() throws IOException {
+    public void checkContent() {
         //response convert json into string
-        JsonPath jsonObject = new JsonPath(getResponce().asString());
+        JsonPath jsonObject = new JsonPath(getResponse().asString());
         List<Product> productsArray = jsonObject.get("products");
         List<Product> getProductData = new ArrayList<>();
         Product objectProduct = new Product();
@@ -62,8 +60,8 @@ public class Items extends ProductsListMethod {
     }
 
     @Test(priority = 4)
-    public void checkLength() throws IOException {
-        var response = getResponce().asString();
+    public void checkLength() {
+        var response = getResponse().asString();
         JsonPath jsonResponse = new JsonPath(response);
         var idLength = jsonResponse.getInt("products.id.size()");
         log.info("The length is : " + idLength + " products");
