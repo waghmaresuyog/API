@@ -1,6 +1,6 @@
 package endPoint;
 
-public class ServiceEndPoint {
+public class ServiceEndPointUrl {
     // return the end url
     public static String productEndURL() {
         return "productsList";

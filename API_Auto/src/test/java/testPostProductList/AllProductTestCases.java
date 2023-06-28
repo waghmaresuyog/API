@@ -10,16 +10,18 @@ import org.testng.annotations.Test;
 
 
 public class AllProductTestCases extends ProductsListMethod {
+
     private static final Logger log = LogManager.getLogger("AllProduct.class");
+
     //check status code hitting the post request
     @Test(priority = 1)
-    public void statusCodeProductPostMethod()  {
+    public void statusCodeProductPostMethod() {
         Assert.assertEquals(postRequest().getStatusCode(), 200);
         log.info("The response code is : " + postRequest().getStatusCode());
     }
 
     @Test(priority = 2)
-    public void responseProductPostMethod()  {
+    public void responseProductPostMethod() {
         JsonPath jsonResponse = new JsonPath(postRequest().asString());
         ResponseBody body = postRequest().getBody(); //use to print response body
         log.info("Response Body is: " + body.asString());
