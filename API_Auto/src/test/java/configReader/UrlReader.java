@@ -13,12 +13,9 @@ public class UrlReader {
         Properties properties = new Properties();
         try {
             file = new FileInputStream(userDirectory + "/Config.properties");
-
+            properties.load(file);
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
-        }
-        try {
-            properties.load(file);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
