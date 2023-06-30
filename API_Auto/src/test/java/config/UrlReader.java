@@ -1,10 +1,11 @@
-package configReader;
+package config;
 
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
 public class UrlReader {
+
     //Read Properties file from Config.properties file
     public static Properties getProperties() {
         Properties properties = new Properties();

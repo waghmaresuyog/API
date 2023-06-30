@@ -5,7 +5,7 @@ import io.restassured.response.Response;
 
 import static base.FinalServiceUrl.*;
 
-public class CrudOperation extends EndPointServiceUrl {
+public class CrudOperation  {
     public static String url = getFinalUrl();
 
     //Get Request hit and return the response

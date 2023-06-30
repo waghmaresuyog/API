@@ -1,6 +1,6 @@
 package base;
 
-import static configReader.UrlReader.productBaseUrl;
+import static config.UrlReader.productBaseUrl;
 import static base.EndPointServiceUrl.productEndURL;
 
 public class FinalServiceUrl {
