@@ -1,6 +1,6 @@
 package testGetProductList;
 
-import client.ProductsListMethod;
+import base.CrudOperation;
 import io.restassured.path.json.JsonPath;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -11,8 +11,7 @@ import payload.Product;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ItemsTestCases extends ProductsListMethod {
-
+public class ItemsTestCases extends CrudOperation {
     private static final Logger log = LogManager.getLogger("Items.class");
 
     @Test(priority = 1)
@@ -46,10 +45,8 @@ public class ItemsTestCases extends ProductsListMethod {
             String brand = jsonObject.getString("products[" + index + "].brand");
             getProductData.forEach(displayList -> {
                 if (name.equals(objectProduct.getProductName())) {
-                    log.info(objectProduct.getProductId());
-                    log.info(objectProduct.getProductName());
-                    log.info(objectProduct.getProductBrand());
-                    log.info(objectProduct.getProductPrice());
+                    log.info(objectProduct.getProductId() + " " + objectProduct.getProductName()
+                            + " " + objectProduct.getProductBrand() + " " + objectProduct.getProductPrice());
                     Assert.assertEquals(objectProduct.getProductId(), id);
                     Assert.assertEquals(objectProduct.getProductName(), name);
                     Assert.assertEquals(objectProduct.getProductPrice(), price);

@@ -3,10 +3,10 @@ package payload;
 
 public class Product {
 
-   private static String productId;
-   private static String productName;
-   private static String productPrice;
-   private static String productBrand;
+    private static String productId;
+    private static String productName;
+    private static String productPrice;
+    private static String productBrand;
 
     public String getProductId() {
         return productId;

@@ -1,6 +1,6 @@
 package testPostProductList;
 
-import client.ProductsListMethod;
+import base.CrudOperation;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.ResponseBody;
 import org.apache.logging.log4j.LogManager;
@@ -8,8 +8,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-
-public class AllProductTestCases extends ProductsListMethod {
+public class AllProductTestCases extends CrudOperation {
 
     private static final Logger log = LogManager.getLogger("AllProduct.class");
 
