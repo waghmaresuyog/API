@@ -1,55 +1,35 @@
-package APIAssignments;
+package testGetProductList;
 
-import io.restassured.RestAssured;
+import base.CrudOperation;
 import io.restassured.path.json.JsonPath;
-import io.restassured.response.Response;
-import org.apache.log4j.PropertyConfigurator;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
-import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import payload.Product;
 
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-
-import static io.restassured.RestAssured.*;
-import static org.apache.logging.log4j.Logger.*;
-
-
-public class Items {
-    private static String url;
-    public Items() {
-        try {
-            url = UrlReader.getUrl();
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-    }
+public class ItemsTestCases extends CrudOperation {
     private static final Logger log = LogManager.getLogger("Items.class");
-    @BeforeTest
-    public void getLoggerDisplay() {
-        PropertyConfigurator.configure("log4j2.properties");
-    }
+
     @Test(priority = 1)
     public void checkStatusCode() {
-            Response response = RestAssured.get(url).then().extract().response();
-            Assert.assertEquals(response.getStatusCode(), 200);
-            log.info("Status code is " + response.getStatusCode());
+        Assert.assertEquals(getResponse().getStatusCode(), 200);
+        log.info("Status code is " + getResponse().getStatusCode());
     }
 
     @Test(priority = 2)
     public void checkProductList() {
-        var getList = given().when().get(url).then().log().all().toString();
+        var getList = getResponse().asString();
         log.info("Product List is " + getList);
     }
 
     @Test(priority = 3)
     public void checkContent() {
-        Response response = RestAssured.get(url).then().extract().response();
-        JsonPath jsonObject = new JsonPath(response.asString());//response convert json into string
+        //response convert json into string
+        JsonPath jsonObject = new JsonPath(getResponse().asString());
         List<Product> productsArray = jsonObject.get("products");
         List<Product> getProductData = new ArrayList<>();
         Product objectProduct = new Product();
@@ -65,10 +45,8 @@ public class Items {
             String brand = jsonObject.getString("products[" + index + "].brand");
             getProductData.forEach(displayList -> {
                 if (name.equals(objectProduct.getProductName())) {
-                    log.info(objectProduct.getProductId());
-                    log.info(objectProduct.getProductName());
-                    log.info(objectProduct.getProductBrand());
-                    log.info(objectProduct.getProductPrice());
+                    log.info(objectProduct.getProductId() + " " + objectProduct.getProductName()
+                            + " " + objectProduct.getProductBrand() + " " + objectProduct.getProductPrice());
                     Assert.assertEquals(objectProduct.getProductId(), id);
                     Assert.assertEquals(objectProduct.getProductName(), name);
                     Assert.assertEquals(objectProduct.getProductPrice(), price);
@@ -80,7 +58,7 @@ public class Items {
 
     @Test(priority = 4)
     public void checkLength() {
-        var response = given().when().get(url).then().extract().asString();
+        var response = getResponse().asString();
         JsonPath jsonResponse = new JsonPath(response);
         var idLength = jsonResponse.getInt("products.id.size()");
         log.info("The length is : " + idLength + " products");
