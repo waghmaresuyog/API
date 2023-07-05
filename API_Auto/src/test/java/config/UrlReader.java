@@ -18,7 +18,7 @@ public class UrlReader {
         return properties;
     }
 
-    public static String productBaseUrl() {
+    public static String baseUrl() {
         String commonUrl = getProperties().getProperty("UrlBase");
         return commonUrl;
     }
