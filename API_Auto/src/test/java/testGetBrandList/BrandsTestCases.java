@@ -13,18 +13,18 @@ import java.util.List;
 
 public class BrandsTestCases extends CrudOperation {
 
-    private static final Logger log = LogManager.getLogger("Brands.class");
+    private static final Logger log = LogManager.getLogger("BrandsTestCases.class");
 
     @Test(priority = 1)
     public void checkBrandStatusCode() {
-        Assert.assertEquals(getBrandsResponse().getStatusCode(), 200);
-        log.info("Status code is " + getBrandsResponse().getStatusCode());
+        Assert.assertEquals(getBrandsListResponse().getStatusCode(), 200);
+        log.info("Status code is " + getBrandsListResponse().getStatusCode());
     }
 
-    @Test(priority = 3)
+    @Test(priority = 2)
     public void checkBrandContent() {
         //  response convert json into string
-        JsonPath jsonObject = new JsonPath(getBrandList().asString());
+        JsonPath jsonObject = new JsonPath(getBrandsListResponse().asString());
         List<Brand> brandData = new ArrayList<>();
         Brand dataList = new Brand("1", "Polo");
         brandData.add(dataList);
@@ -44,9 +44,9 @@ public class BrandsTestCases extends CrudOperation {
         }
     }
 
-    @Test(priority = 4)
+    @Test(priority = 3)
     public void checkBrandLength() {
-        var response = getBrandList().asString();
+        var response = getBrandsListResponse().asString();
         JsonPath jsonResponse = new JsonPath(response);
         var idLength = jsonResponse.getInt("brands.id.size()");
         log.info("The length is : " + idLength + " brands");
