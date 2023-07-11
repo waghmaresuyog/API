@@ -7,6 +7,7 @@ import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import payload.Brand;
+import payload.Product;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,20 +26,20 @@ public class BrandsTestCases extends CrudOperation {
     public void checkBrandContent() {
         //  response convert json into string
         JsonPath jsonObject = new JsonPath(getBrandsListResponse().asString());
-        List<Brand> brandData = new ArrayList<>();
-        Brand dataList = new Brand("1", "Polo");
-        brandData.add(dataList);
-        dataList = new Brand("2", "H&M");
-        brandData.add(dataList);
-        for (int index = 0; index < 2; index++) {
+        List<Brand> brandsArray = jsonObject.get("brands");
+        List<Brand> getBrandlist = new ArrayList<>();
+        Brand objectBrand= new Brand();
+        objectBrand.setBrandId(String.valueOf(1));
+        objectBrand.setBrandName("Polo");
+        getBrandlist.add(objectBrand);
+        for (int index = 0; index < brandsArray.size(); index++) {
             String id = jsonObject.getString("brands[" + index + "].id");
-            String name = jsonObject.getString("brands[" + index + "].brand");
-            brandData.forEach(brand -> {
-                if (name.equals(brand.brandName)) {
-                    log.info(brand.brandId);
-                    log.info(brand.brandName);
-                    Assert.assertEquals(brand.brandId, id);
-                    Assert.assertEquals(brand.brandName, name);
+            String brandName = jsonObject.getString("brands[" + index + "].brand");
+            getBrandlist.forEach(brand -> {
+                if (brandName.equals(objectBrand.getBrandName())) {
+                    log.info(brand.getBrandId() + " " + brand.getBrandName());
+                    Assert.assertEquals(objectBrand.getBrandId(), id);
+                    Assert.assertEquals(objectBrand.getBrandName(), brandName);
                 }
             });
         }
@@ -52,4 +53,5 @@ public class BrandsTestCases extends CrudOperation {
         log.info("The length is : " + idLength + " brands");
         Assert.assertEquals(idLength, 34, "number of Brand are Not expected");
     }
+
 }

@@ -2,11 +2,28 @@ package payload;
 
 public class Brand {
 
-    public String brandId;
-    public String brandName;
+    private String brandId;
+    private String brandName;
 
-    public Brand(String brandId, String brandName) {
+    public Brand() {
+
+    }
+
+    public String getBrandId() {
+        return brandId;
+    }
+
+    public void setBrandId(String brandId) {
+
         this.brandId = brandId;
+    }
+
+    public String getBrandName() {
+        return brandName;
+    }
+
+    public void setBrandName(String brandName) {
         this.brandName = brandName;
     }
+
 }
