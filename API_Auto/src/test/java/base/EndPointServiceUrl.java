@@ -5,4 +5,8 @@ public class EndPointServiceUrl {
     public static String productEndURL() {
         return "productsList";
     }
+
+    public static String brandEndUrl() {
+        return "brandsList";
+    }
 }

@@ -1,0 +1,11 @@
+07-07-2023 10:25:06 BrandsTestCases.java INFO  [main] BrandsTestCases.class 21 - Status code is 200
+07-07-2023 10:25:08 BrandsTestCases.java INFO  [main] BrandsTestCases.class 38 - 1
+07-07-2023 10:25:08 BrandsTestCases.java INFO  [main] BrandsTestCases.class 39 - Polo
+07-07-2023 10:25:08 BrandsTestCases.java INFO  [main] BrandsTestCases.class 38 - 2
+07-07-2023 10:25:08 BrandsTestCases.java INFO  [main] BrandsTestCases.class 39 - H&M
+07-07-2023 10:25:09 BrandsTestCases.java INFO  [main] BrandsTestCases.class 52 - The length is : 34 brands
+
+===============================================
+Default Suite
+Total tests run: 3, Passes: 3, Failures: 0, Skips: 0
+===============================================
