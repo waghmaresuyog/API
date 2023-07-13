@@ -27,7 +27,7 @@ public class CrudOperation {
         return response;
     }
 
-    public Response putBrandsListResponse(){
+    public static Response putBrandsListResponse(){
         Response response =RestAssured.put(brandUrl).then().extract().response();
         return response;
     }
